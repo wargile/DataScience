@@ -1,0 +1,29 @@
+---
+title: "DSfB10"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+10. Representing and Mining Text
+Fundamental concepts: The importance of constructing mining-friendly data representations; Representation of text for data mining.
+Exemplary techniques: Bag of words representation; TFIDF calculation; N-grams; Stemming; Named entity extraction; Topic models.
+Why Text Is Important
+Why Text Is Difficult
+Representation
+Bag of Words
+Term Frequency
+Measuring Sparseness: Inverse Document Frequency
+Combining Them: TFIDF
+Example: Jazz Musicians
+* The Relationship of IDF to Entropy
+Beyond Bag of Words
+N-gram Sequences
+Named Entity Extraction
+Topic Models
+Example: Mining News Stories to Predict Stock Price Movement
+The Task
+The Data
+Data Preprocessing
+Results
+Summary

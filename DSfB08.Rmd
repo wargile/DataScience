@@ -1,0 +1,17 @@
+---
+title: "DSfB08"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+8. Visualizing Model Performance
+Fundamental concepts: Visualization of model performance under various kinds of uncertainty; Further consideration of what is desired from data mining results.
+Exemplary techniques: Profit curves; Cumulative response curves; Lift curves; ROC curves.
+Ranking Instead of Classifying
+Profit Curves
+ROC Graphs and Curves
+The Area Under the ROC Curve (AUC)
+Cumulative Response and Lift Curves
+Example: Performance Analytics for Churn Modeling
+Summary

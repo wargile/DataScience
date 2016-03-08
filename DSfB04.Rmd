@@ -1,0 +1,22 @@
+---
+title: "DSfB04"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+4. Fitting a Model to Data
+Fundamental concepts: Finding “optimal” model parameters based on data; Choosing the goal for data mining; Objective functions; Loss functions.
+Exemplary techniques: Linear regression; Logistic regression; Support-vector machines.
+Classification via Mathematical Functions
+Linear Discriminant Functions
+Optimizing an Objective Function
+An Example of Mining a Linear Discriminant from Data
+Linear Discriminant Functions for Scoring and Ranking Instances
+Support Vector Machines, Briefly
+Regression via Mathematical Functions
+Class Probability Estimation and Logistic “Regression”
+* Logistic Regression: Some Technical Details
+Example: Logistic Regression versus Tree Induction
+Nonlinear Functions, Support Vector Machines, and Neural Networks
+Summary

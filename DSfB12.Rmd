@@ -1,0 +1,20 @@
+---
+title: "DSfB12"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+12. Other Data Science Tasks and Techniques
+Fundamental concepts: Our fundamental concepts as the basis of many common data science techniques; The importance of familiarity with the building blocks of data science.
+Exemplary techniques: Association and co-occurrences; Behavior profiling; Link prediction; Data reduction; Latent information mining; Movie recommendation; Bias-variance decomposition of error; Ensembles of models; Causal reasoning from data.
+Co-occurrences and Associations: Finding Items That Go Together
+Measuring Surprise: Lift and Leverage
+Example: Beer and Lottery Tickets
+Associations Among Facebook Likes
+Profiling: Finding Typical Behavior
+Link Prediction and Social Recommendation
+Data Reduction, Latent Information, and Movie Recommendation
+Bias, Variance, and Ensemble Methods
+Data-Driven Causal Explanation and a Viral Marketing Example
+Summary

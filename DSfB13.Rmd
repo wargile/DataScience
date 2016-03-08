@@ -1,0 +1,24 @@
+---
+title: "DSfB13"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+13. Data Science and Business Strategy
+Fundamental concepts: Our principles as the basis of success for a data-driven business; Acquiring and sustaining competitive advantage via data science; The importance of careful curation of data science capability.
+Thinking Data-Analytically, Redux
+Achieving Competitive Advantage with Data Science
+Sustaining Competitive Advantage with Data Science
+Formidable Historical Advantage
+Unique Intellectual Property
+Unique Intangible Collateral Assets
+Superior Data Scientists
+Superior Data Science Management
+Attracting and Nurturing Data Scientists and Their Teams
+Examine Data Science Case Studies
+Be Ready to Accept Creative Ideas from Any Source
+Be Ready to Evaluate Proposals for Data Science Projects
+Example Data Mining Proposal
+Flaws in the Big Red Proposal
+A Firm's Data Science Maturity

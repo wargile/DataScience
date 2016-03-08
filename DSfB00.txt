@@ -1,0 +1,20 @@
+Table of contents
+Most chapters introduce a set of fundamental concepts and exemplary techniques.  Starred sections are optional and introduce advanced technical material.
+Preface
+Our Conceptual Approach to Data Science
+To the Instructor
+Other Skills and Concepts
+Sections and Notation
+Using Examples
+Safari® Books Online
+How to Contact Us
+Acknowledgments
+
+Glossary
+Bibliography
+
+Appendix A: Proposal Review Guide
+Business and Data Understanding
+Data Preparation
+Modeling
+Evaluation and Deployment

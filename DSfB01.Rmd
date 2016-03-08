@@ -1,0 +1,22 @@
+---
+title: "DSfB01"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+1. Introduction: Data-Analytic Thinking
+The Ubiquity of Data Opportunities
+Example: Hurricane Frances
+Example: Predicting Customer Churn
+Data Science, Engineering, and Data-Driven Decision Making
+Data Processing and “Big Data”
+From Big Data 1.0 to Big Data 2.0
+Data and Data Science Capability as a Strategic Asset
+Data-Analytic Thinking
+This Book
+Data Mining and Data Science, Revisited
+Chemistry Is Not About Test Tubes: Data Science Versus the Work 
+of the Data Scientist
+Summary
+

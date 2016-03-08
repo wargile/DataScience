@@ -1,0 +1,48 @@
+---
+title: "DSiR00"
+author: "Robert A. Stevens"
+date: "March 8, 2016"
+output: html_document
+---
+
+**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+
+by Deborah Nolan and Duncan Temple Lang
+
+http://www.rdatasciencecases.org
+
+## Table of Contents
+
+### Data Manipulation and Modeling 
+
+1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+
+2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+
+3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+
+4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+
+5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+
+### Simulation Studies 
+
+6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+
+7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+
+8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+
+9. Simulating Blackjack Hadley Wickham
+
+### Data- and Web-Technologies 
+
+10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
+
+11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
+
+12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
+
+Index
+
+Exercises appear at the end of most chapters.

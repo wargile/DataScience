@@ -1,0 +1,16 @@
+---
+title: "DSiR12"
+author: "Robert A. Stevens"
+date: "March 8, 2016"
+output: html_document
+---
+
+**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+
+by Deborah Nolan and Duncan Temple Lang
+
+http://www.rdatasciencecases.org
+
+Chapter 12. Exploring Data Science Jobs with Web Scraping and Text Mining 
+
+by Deborah Nolan and Duncan Temple Lang

@@ -1,0 +1,17 @@
+---
+title: "DSfB14"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+14. Conclusion
+Fundamental concept: (Recursive) Understanding the fundamental concepts of data science facilitates understanding data science quite broadly and interacting competently about business analytics.
+The Fundamental Concepts of Data Science
+Applying Our Fundamental Concepts to a New Problem: Mining Mobile Device Data
+Changing the Way We Think about Solutions to Business Problems
+What Data Can't Do: Humans in the Loop, Revisited
+Privacy, Ethics, and Mining Data About Individuals
+Is There More to Data Science?
+Final Example: From Crowd-Sourcing to Cloud-Sourcing
+Final Words

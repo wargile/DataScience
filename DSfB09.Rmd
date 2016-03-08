@@ -1,0 +1,21 @@
+---
+title: "DSfB09"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+9. Evidence and Probabilities
+Fundamental concepts: Explicit evidence combination with Bayes' Rule; Probabilistic reasoning via assumptions of conditional independence.
+Exemplary techniques: Naive Bayes classification; Evidence lift.
+Example: Targeting Online Consumers With Advertisements
+Combining Evidence Probabilistically
+Joint Probability and Independence
+Bayes’ Rule
+Applying Bayes’ Rule to Data Science
+Conditional Independence and Naive Bayes
+Advantages and Disadvantages of Naive Bayes
+A Model of Evidence ``Lift''
+Example: Evidence Lifts from Facebook "Likes"
+Evidence in Action: Targeting Consumers with Ads
+Summary

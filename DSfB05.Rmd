@@ -1,0 +1,26 @@
+---
+title: "DSfB05"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+5. Overfitting and Its Avoidance
+Fundamental concepts: Generalization; Fitting and overfitting; Complexity control.
+Exemplary techniques: Cross-validation; Attribute selection; Tree pruning;  Regularization.
+Generalization
+Overfitting
+Overfitting Examined
+Holdout Data and Fitting Graphs
+Overfitting in Tree Induction
+Overfitting in Mathematical Functions
+Example: Overfitting Linear Functions
+* Example: Why Is Overfitting Bad?
+From Holdout Evaluation to Cross-Validation
+The Churn Dataset Revisited
+Learning Curves
+Overfitting Avoidance and Complexity Control
+Avoiding Overfitting with Tree Induction
+A General Method for Avoiding Overfitting
+* Avoiding Overfitting for Parameter Optimization
+Summary

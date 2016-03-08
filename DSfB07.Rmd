@@ -1,0 +1,23 @@
+---
+title: "DSfB07"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+7. Decision Analytic Thinking I: What Is a Good Model?
+Fundamental concepts: Careful consideration of what is desired from data science results; Expected value as a key evaluation framework; Consideration of appropriate comparative baselines.
+Exemplary techniques: Various evaluation metrics; Estimating costs and benefits; Calculating expected profit; Creating baseline methods for comparison.
+Evaluating Classifiers
+Plain Accuracy and Its Problems
+The Confusion Matrix
+Problems with Unbalanced Classes
+Problems with Unequal Costs and Benefits
+Generalizing Beyond Classification
+A Key Analytical Framework: Expected Value
+Using Expected Value to Frame Classifier Use
+Using Expected Value to Frame Classifier Evaluation
+Error rates
+Costs and benefits
+Evaluation, Baseline Performance, and Implications for Investments in Data
+Summary

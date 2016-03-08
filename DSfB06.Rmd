@@ -1,0 +1,38 @@
+---
+title: "DSfB06"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+6. Similarity, Neighbors, and Clusters
+Fundamental concepts: Calculating similarity of objects described by data; Using similarity for prediction; Clustering as similarity-based segmentation.
+Exemplary techniques:  Searching for similar entities; Nearest neighbor methods; Clustering methods; Distance metrics for calculating similarity.
+Similarity and Distance
+Nearest-Neighbor Reasoning
+Example: Whiskey Analytics
+Nearest Neighbors for Predictive Modeling
+Classification
+Probability Estimation
+Regression
+How Many Neighbors and How Much Influence?
+Geometric Interpretation, Overfitting, and Complexity Control
+Issues with Nearest-Neighbor Methods
+Intelligibility
+Dimensionality and domain knowledge
+Computational efficiency
+Some Important Technical Details Relating to Similarities and Neighbors
+Heterogeneous Attributes
+* Other Distance Functions
+* Combining Functions: Calculating Scores from Neighbors
+Clustering
+Example: Whiskey Analytics Revisited
+Hierarchical Clustering
+Nearest Neighbors Revisited: Clustering Around Centroids
+Example: Clustering Business News Stories
+Data preparation
+The news story clusters
+Understanding the Results of Clustering
+* Using Supervised Learning to Generate Cluster Descriptions
+Stepping Back: Solving a Business Problem Versus Data Exploration
+Summary

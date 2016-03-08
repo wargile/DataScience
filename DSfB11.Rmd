@@ -1,0 +1,18 @@
+---
+title: "DSfB11"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+11. Decision Analytic Thinking II: Toward Analytical Engineering
+Fundamental concept: Solving business problems with data science starts with analytical engineering: designing an analytical solution, based on the data, tools, and techniques available.
+Exemplary technique: Expected value as a framework for data science solution design.
+Targeting the Best Prospects for a Charity Mailing
+The Expected Value Framework: Decomposing the Business Problem and Recomposing the Solution Pieces
+A Brief Digression on Selection Bias
+Our Churn Example Revisited with Even More Sophistication
+The Expected Value Framework: Structuring a More Complicated Business Problem
+Assessing the Influence of the Incentive
+From an Expected Value Decomposition to a Data Science Solution
+Summary

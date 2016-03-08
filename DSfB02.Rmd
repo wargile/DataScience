@@ -1,0 +1,28 @@
+---
+title: "DSfB02"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+2. Business Problems and Data Science Solutions
+Fundamental concepts: A set of canonical data mining tasks; The data mining process; Supervised versus unsupervised data mining.
+From Business Problems to Data Mining Tasks
+Supervised Versus Unsupervised Methods
+Data Mining and Its Results
+The Data Mining Process
+Business Understanding
+Data Understanding
+Data Preparation
+Modeling
+Evaluation
+Deployment
+Implications for Managing the Data Science Team
+Other Analytics Techniques and Technologies
+Statistics
+Database Querying
+Data Warehousing
+Regression Analysis
+Machine Learning and Data Mining
+Answering Business Questions with These Techniques
+Summary

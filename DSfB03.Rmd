@@ -1,0 +1,23 @@
+---
+title: "DSfB03"
+author: "Robert A. Stevens"
+date: "March 2, 2016"
+output: html_document
+---
+
+3. Introduction to Predictive Modeling: From Correlation to Supervised Segmentation
+Fundamental concepts: Identifying informative attributes; Segmenting data by progressive attribute selection.
+Exemplary techniques: Finding correlations; Attribute/variable selection; Tree induction.
+Models, Induction, and Prediction
+Supervised Segmentation
+Selecting Informative Attributes
+Example: Attribute Selection with Information Gain
+Supervised Segmentation with Tree-Structured Models
+Visualizing Segmentations
+Trees as Sets of Rules
+Probability Estimation
+Example: Addressing the Churn Problem with Tree Induction
+Summary
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
