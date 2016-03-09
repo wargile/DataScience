@@ -80,12 +80,54 @@ dim(offline)
 ## 1.3 Cleaning the Data and Building a Representation for Analysis
 
 ```{r comment=NA}
-
+names(offline) <- c("time", "scanMac", "posX", "posY", "posZ", 
+                    "orientation", "mac", "signal", "channel", "type")
+numVars <- c("time", "posX", "posY", "posZ", "orientation", "signal")
+offline[numVars] <-  lapply(offline[numVars ], as.numeric)
+offline <- offline[offline$type == "3", ]
+offline <- offline[ , "type" != names(offline) ]
+dim(offline)
+offline$rawTime <- offline$time
+offline$time <- offline$time/1000
+class(offline$time) <- c("POSIXt", "POSIXct")
+unlist(lapply(offline, class))
+summary(offline[, numVars])
+summary(sapply(offline[ , c("mac", "channel", "scanMac")], as.factor))
+offline <- offline[ , !(names(offline) %in% c("scanMac", "posZ"))]
 ```
 
 ### 1.3.1 Exploring Orientation
 
 ```{r comment=NA}
+length(unique(offline$orientation))
+plot(ecdf(offline$orientation))
+#pdf(file = "Geo_ECDFOrientation.pdf", width = 10, height = 7)
+oldPar <- par(mar = c(4, 4, 1, 1))
+plot(ecdf(offline$orientation), pch = 19, cex = 0.3,
+     xlim = c(-5, 365), axes = FALSE,
+     xlab = "orientation", ylab = "Empirical CDF", main = "")
+box()
+axis(2)
+axis(side = 1, at = seq(0, 360, by = 45))
+par(oldPar)
+#dev.off()
+```
+
+**Figure 1.2. Emperical CDF of Orientation for the Hand-Held Device.  This emperical distribution function of orientation shows that there are 8 basic orientations that are 45 degrees apart.  We see from the stps in the function that these orientations are not exactly 45, 90, 135, etc. Also, the 0 orientation is split inot the two groups, one near 0 and the other near 360.**
+
+```{r comment=NA}
+#pdf(file = "Geo_DensityOrientation.pdf", width = 10, height = 5)
+oldPar = par(mar = c(4, 4, 1, 1))
+plot(density(offline$orientation, bw = 2),  xlab = "orientation", main = "")
+par(oldPar)
+#dev.off()
+
+roundOrientation <- function(angles) {
+  refs <- seq(0, by = 45, length  = 9)
+  q <- sapply(angles, function(o) which.min(abs(o - refs)))
+  c(refs[1:8], 0)[q]
+}
+offline$angle <- roundOrientation(offline$orientation)
 
 ```
 

@@ -1,77 +1,9 @@
 
-processLine = function(x)
-{
-  tokens = strsplit(x, "[;=,]")[[1]]
-  
-  if (length(tokens) == 10) 
-    return(NULL)
- 
-  tmp = matrix(tokens[ - (1:10) ], , 4, byrow = TRUE)
-  cbind(matrix(tokens[c(2, 4, 6:8, 10)], nrow(tmp), 6, 
-               byrow = TRUE), tmp)
-}
 
-options(error = recover, warn = 1)
-tmp = lapply(lines, processLine)
-offline = as.data.frame(do.call("rbind", tmp), 
-                        stringsAsFactors = FALSE)
 
-dim(offline)
 
-names(offline) = c("time", "scanMac", "posX", "posY", "posZ", 
-                   "orientation", "mac", "signal", 
-                   "channel", "type")
 
-numVars = c("time", "posX", "posY", "posZ", 
-            "orientation", "signal")
-offline[ numVars ] =  lapply(offline[ numVars ], as.numeric)
 
-offline = offline[ offline$type == "3", ]
-offline = offline[ , "type" != names(offline) ]
-dim(offline)
-
-offline$rawTime = offline$time
-offline$time = offline$time/1000
-class(offline$time) = c("POSIXt", "POSIXct")
-
-unlist(lapply(offline, class))
-
-summary(offline[, numVars])
-
- summary(sapply(offline[ , c("mac", "channel", "scanMac")],
-                as.factor))
-
-offline = offline[ , !(names(offline) %in% c("scanMac", "posZ"))]
-
-length(unique(offline$orientation))
-
-plot(ecdf(offline$orientation))
-
-pdf(file = "Geo_ECDFOrientation.pdf", width = 10, height = 7)
-oldPar = par(mar = c(4, 4, 1, 1))
-plot(ecdf(offline$orientation), pch = 19, cex = 0.3,
-     xlim = c(-5, 365), axes = FALSE,
-     xlab = "orientation", ylab = "Empirical CDF", main = "")
-box()
-axis(2)
-axis(side = 1, at = seq(0, 360, by = 45))
-par(oldPar)
-dev.off()
-
-pdf(file = "Geo_DensityOrientation.pdf", width = 10, height = 5)
-oldPar = par(mar = c(4, 4, 1, 1))
-plot(density(offline$orientation, bw = 2), 
- xlab = "orientation", main = "")
-par(oldPar)
-dev.off()
-
-roundOrientation = function(angles) {
-  refs = seq(0, by = 45, length  = 9)
-  q = sapply(angles, function(o) which.min(abs(o - refs)))
-  c(refs[1:8], 0)[q]
-}
-
-offline$angle = roundOrientation(offline$orientation)
 
 pdf(file = "Geo_BoxplotAngle.pdf", width = 10)
 oldPar = par(mar = c(4, 4, 1, 1))
