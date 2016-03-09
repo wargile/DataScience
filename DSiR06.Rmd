@@ -1,48 +1,44 @@
 ---
-title: "DSiR00"
+title: "DSiR06”
 author: "Robert A. Stevens"
 date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+# Chapter 6. Pairs Trading 
 
-### Data Manipulation and Modeling 
+by Cari Kaufman and Duncan Temple Lang
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+6.1 The Problem
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+6.1.1 Computation Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+6.2 The Data Format
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+6.3 Reading the Financial Data
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+6.4 Visualizing the Time Series
 
-### Simulation Studies 
+6.5 Finding Opening and Closing Positions
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+6.5.1 Identifying a Position
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+6.5.2 Displaying Positions
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+6.5.3 Finding All Positions
 
-9. Simulating Blackjack Hadley Wickham
+6.5.4 Computing the Profit for a Position
 
-### Data- and Web-Technologies 
+6.5.5 Fining the Optimal Value for k
 
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
+6.6 Simulation Study
 
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
+6.6.1 Simulating the Stock Price Series
 
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
-
-Index
-
-Exercises appear at the end of most chapters.
+6.6.2 Making sotckSim() Faster

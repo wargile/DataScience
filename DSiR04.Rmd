@@ -5,44 +5,36 @@ date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+# Chapter 4. Processing Robot and Sensor Log Files: Seeking a Circular Target 
 
-### Data Manipulation and Modeling 
+by Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+4.1 Description
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+4.1.1 Computational Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+4.2 The Data
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+4.2.1 Reading an Entire Log File
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+4.2.2 Exploring Log Files
 
-### Simulation Studies 
+4.2.3 Visualizing the Path
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+4.2.4 Exploring a “Look”
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+4.2.5 The Error Distribution for Range Values
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+4.3 Detecting a Circular Target
 
-9. Simulating Blackjack Hadley Wickham
+4.3.1 Connecting Segments Behind the Robot
 
-### Data- and Web-Technologies 
+4.3.2 Determining If a Segment Corresponds to a Circule
 
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
-
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
-
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
-
-Index
-
-Exercises appear at the end of most chapters.
+4.4 Detecting the Target with Streaming Data in Real Time

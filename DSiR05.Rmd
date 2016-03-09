@@ -5,44 +5,38 @@ date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+# Chapter 5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays 
 
-### Data Manipulation and Modeling 
+by Michael Kane
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+5.1 Introduction
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+5.1.1 Computational Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+5.2 Acquiring the Airline Data Set
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+5.3 Computing with Massive Data: Getting Flight Delay Counts
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+5.3.1 The R Programming Environment
 
-### Simulation Studies 
+5.3.2 The UNIX Shell
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+5.3.3 An SQL Database with R
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+5.3.4 The big memory Package with R
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+5.4 Explanations Using Parallel Computing:  The Distribution of Flight Delays
 
-9. Simulating Blackjack Hadley Wickham
+5.4.1 Wring a Parallelizable Loop with foreach
 
-### Data- and Web-Technologies 
+5.4.2 Using the Split-Apply-Combine Approach for Better Performance
 
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
+5.4.3 Using Split-Apply-Combine to Find the Best Time to Fly
 
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
-
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
-
-Index
-
-Exercises appear at the end of most chapters.
+5.5 From Exploration to Model:  Do Older Plans Suffer Greater Delays?

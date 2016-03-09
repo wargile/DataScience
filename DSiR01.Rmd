@@ -5,44 +5,154 @@ date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+# Chapter 1. Predicting Location via Indoor Positioning Systems 
 
-### Data Manipulation and Modeling 
+by Deborah Nolan and Duncan Temple Lang
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+## 1.1 Introduction
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+### 1.1.1 Computational Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+## 1.2 The Raw Data
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+```{r comment=NA}
+options(digits = 2)
+setwd("~/GitHub/DataScience")
+#txt = readLines("Data/offline.final.trace.txt")
+txt <- readLines("offline.final.trace.txt")
+sum(substr(txt, 1, 1) == "#")
+length(txt)
+```
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+### 1.2.1 Processing the Raw Data
 
-### Simulation Studies 
+```{r comment=NA}
+strsplit(txt[4], ";")[[1]]
+tokens <- strsplit(txt[4], "[;=,]")[[1]]
+tokens[1:10]
+tokens[c(2, 4, 6:8, 10)]
+tokens[-(1:10)]
+tmp <- matrix(tokens[-(1:10)], ncol = 4, byrow = TRUE)
+mat <- cbind(matrix(tokens[c(2, 4, 6:8, 10)], 
+                    nrow = nrow(tmp),
+                    ncol = 6, 
+                    byrow = TRUE), 
+             tmp)
+dim(mat)
+processLine <- function(x) {
+  tokens <- strsplit(x, "[;=,]")[[1]]
+  tmp <- matrix(tokens[-(1:10)], ncol = 4, byrow = TRUE)
+  cbind(matrix(tokens[c(2, 4, 6:8, 10)], 
+               nrow = nrow(tmp),
+               ncol = 6, 
+               byrow = TRUE), 
+        tmp)
+}
+tmp <- lapply(txt[4:20], processLine)
+sapply(tmp, nrow)
+offline <- as.data.frame(do.call("rbind", tmp))
+dim(offline)
+lines <- txt[ substr(txt, 1, 1) != "#" ]
+tmp <- lapply(lines, processLine)
+processLine <- function(x) {
+  tokens <- strsplit(x, "[;=,]")[[1]]
+  if (length(tokens) == 10) 
+    return(NULL)
+  tmp <- matrix(tokens[ - (1:10) ], , 4, byrow = TRUE)
+  cbind(matrix(tokens[c(2, 4, 6:8, 10)], 
+               nrow(tmp), 
+               6, 
+               byrow = TRUE), 
+        tmp)
+}
+options(error = recover, warn = 1)
+tmp <- lapply(lines, processLine)
+offline <- as.data.frame(do.call("rbind", tmp), stringsAsFactors = FALSE)
+dim(offline)
+```
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+## 1.3 Cleaning the Data and Building a Representation for Analysis
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+```{r comment=NA}
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+```
 
-9. Simulating Blackjack Hadley Wickham
+### 1.3.1 Exploring Orientation
 
-### Data- and Web-Technologies 
+```{r comment=NA}
 
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
+```
 
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
+### 1.3.2 Exploring MAC Addresses
 
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
+```{r comment=NA}
 
-Index
+```
 
-Exercises appear at the end of most chapters.
+### 1.3.3 Exploring the Position of the Hand-Held Device
+
+```{r comment=NA}
+
+```
+
+### 1.3.4 Creating a Function to Prepare the Data
+
+```{r comment=NA}
+
+```
+
+## 1.4 Signal Strength Analysis
+
+```{r comment=NA}
+
+```
+
+### 1.4.1 Distribution of Signal Strength
+
+```{r comment=NA}
+
+```
+
+### 1.4.2 The Relationship between Signal and Distance
+
+```{r comment=NA}
+
+```
+
+## 1.5 Nearest neighbor Methods to Predict Location
+
+```{r comment=NA}
+
+```
+
+### 1.5.1 Preparing the Test Data
+
+```{r comment=NA}
+
+```
+
+### 1.5.2 Choice of Orientation
+
+```{r comment=NA}
+
+```
+
+### 1.5.3 Finding the Nearest Neighbors
+
+```{r comment=NA}
+
+```
+
+### 1.5.4 Cross-Validation and Choice of k
+
+```{r comment=NA}
+
+```
+
+## 1.6 Exercises

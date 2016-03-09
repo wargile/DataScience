@@ -5,44 +5,36 @@ date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+## Chapter 2. Modeling Runners’ Times in the Cherry Blossom Race 
 
-### Data Manipulation and Modeling 
+by Daniel Kaplan and Deborah Nolan
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+2.1 Introduction
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+2.1.1 Computational Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+2.2 Reading Tables of Race Results into R
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+2.3 Data Cleaning and Reformatting Variables
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+2.4 Exploring the Run Time for All Male Runners
 
-### Simulation Studies 
+2.4.1 Making Plots with Many Observations
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+2.4.2 Fitting Models to Average Performance
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+2.4.3 Cross-Sectional Data and Covariates
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+2.5 Constructing a Record for an Individual Runner across Years
 
-9. Simulating Blackjack Hadley Wickham
+2.6 Modeling the Change in Running Time for Individuals
 
-### Data- and Web-Technologies 
+2.7 Scraping Race Results form the Web
 
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
-
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
-
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
-
-Index
-
-Exercises appear at the end of most chapters.
+2.8 Exercises

@@ -1,48 +1,36 @@
 ---
-title: "DSiR00"
+title: "DSiR10"
 author: "Robert A. Stevens"
 date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+# Chapter 10. Baseball: Exploring Data in a Relational Database 
 
-### Data Manipulation and Modeling 
+by Deborah Nolan and Duncan Temple Lang
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+10.1 Introduction
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+10.1.1 Computational Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+10.2 Sean Lahman’s Database
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+10.2.1 Connecting to the Baseball Database from within R
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+10.3 Aggregating Salaries into Payroll
 
-### Simulation Studies 
+10.4 Merging Payroll Data with Information in Other Tables
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+10.4.1 Adding team Names to the Payroll Data
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+10.4.2 Adding World Series Records to the Payroll Data
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+10.5 Exploring the Extreme Salaries
 
-9. Simulating Blackjack Hadley Wickham
-
-### Data- and Web-Technologies 
-
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
-
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
-
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
-
-Index
-
-Exercises appear at the end of most chapters.
+10.6 Exercises

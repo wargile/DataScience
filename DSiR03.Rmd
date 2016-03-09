@@ -5,44 +5,64 @@ date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Table of Contents
+## Chapter 3. Using Statistics to Identify Spam 
 
-### Data Manipulation and Modeling 
+by Deborah Nolan and Duncan Temple Lang
 
-1. Predicting Location via Indoor Positioning Systems Deborah Nolan and Duncan Temple Lang
+3.1 Introduction
 
-2. Modeling Runners’ Times in the Cherry Blossom Race Daniel Kaplan and Deborah Nolan
+3.1.1 Computational Topics
 
-3. Using Statistics to Identify Spam Deborah Nolan and Duncan Temple Lang
+3.2 Anatomy of an email Message
 
-4. Processing Robot and Sensor Log Files: Seeking a Circular Target Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
+3.3 Reading the email Messages
 
-5. Strategies for Analyzing a 12 Gigabyte Data Set: Airline Flight Delays Michael Kane
+3.4 Text Mining and Naive Bayes Classification
 
-### Simulation Studies 
+3.5 Finding the Words in a Message
 
-6. Pairs Trading Cari Kaufman and Duncan Temple Lang
+3.5.1 Splitting the Message into Its Header and Body
 
-7. Simulation Study of a Branching Process Deborah Nolan and Duncan Temple Lang
+3.5.2 Removing Attachments from the Message Body
 
-8. A Self-Organizing Dynamic System with a Phase Transition Deborah Nolan and Duncan Temple Lang
+3.5.3 Extracting Words from the Message Body
 
-9. Simulating Blackjack Hadley Wickham
+3.5.4 Completing the Data Preparation Process
 
-### Data- and Web-Technologies 
+3.6 Implementing the Naive Bayes Classifier
 
-10. Baseball: Exploring Data in a Relational Database Deborah Nolan and Duncan Temple Lang
+3.6.1 Test and Training Data
 
-11. CIA Factbook Mashup Deborah Nolan and Duncan Temple Lang
+3.6.2 Probability Estimates from Training Data
 
-12. Exploring Data Science Jobs with Web Scraping and Text Mining Deborah Nolan and Duncan Temple Lang
+3.6.3 Classifying New Messages
 
-Index
+3.6.4 Computational Considerations
 
-Exercises appear at the end of most chapters.
+3.7 Recursive Partitioning and Classification Trees
+
+3.8 Organizing an email Message into an R Data Structure
+
+3.8.1 Processing the Header
+
+3.8.2 Processing Attachments
+
+3.8.3 Testing Our Code on More email Data
+
+3.8.4 Completing the Process
+
+3.9 Deriving Variables from the email Message
+
+3.9.1 Checking Our Code for Errors
+
+3.10 Exploring the email Feature Set
+
+3.11 Fitting the rpart() Model to the email Data
+
+3.12 Exercises

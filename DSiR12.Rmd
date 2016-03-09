@@ -5,12 +5,48 @@ date: "March 8, 2016"
 output: html_document
 ---
 
-**Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving**
+*Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-Chapter 12. Exploring Data Science Jobs with Web Scraping and Text Mining 
+# Chapter 12. Exploring Data Science Jobs with Web Scraping and Text Mining 
 
 by Deborah Nolan and Duncan Temple Lang
+
+12.1 Introduction and Motivation
+
+12.1.1 Computational Topics
+
+12.2 Exploring Different Web Sites
+
+12.3 Preliminary/Exploratory Scraping: The Kaggle Job List
+
+12.3.1 Processing the Text
+
+12.3.2 Generalizing to Other Posts
+
+12.3.3 Scraping the Kaggle Post List
+
+12.4 Scraping CyberCoders.com
+
+12.4.1 Getting the Skill List form a Job Post
+
+12.4.2 Finding the Links to Job Postings in the Search Results
+
+12.4.3 Finding the Next Page of Job Post Search Results
+
+12.4.4 Putting It All Together
+
+12.5 A Reasonable Generic Framework for Arbitrary Sites
+
+12.6 Scraping Career Builder
+
+12.7 Scraping Monster.com
+
+12.8 Analyzing the Results: The Important Skills
+
+12.9 Note on Web Scraping
+
+12.10 Exercises
