@@ -6,12 +6,9 @@ output: html_document
 ---
 
 ```{r, comment=NA}
-#install.packages("doBy")
-library(doBy)
-#install.packages("ggplot2")
+library(doBy) # for 'summaryBy' function
 library(ggplot2)
-#require(gdata)
-library(gdata)
+library(gdata) # for 'read.xls' function
 library(plyr) # for 'count' function
 ```
 
@@ -689,7 +686,7 @@ plot(log(bk.homes$gross.sqft),log(bk.homes$sale.price.n))
 #        [order(bk.homes[which(bk.homes$sale.price.n < 100000), ]$sale.price.n), ]
 
 head(bk.homes[which(bk.homes$sale.price.n < 100000), ])
-head(order(bk.homes[which(bk.homes$sale.price.n<100000),]$sale.price.n))
+head(order(bk.homes[which(bk.homes$sale.price.n < 100000), ]$sale.price.n))
 
 ## remove outliers that seem like they weren't actual sales
 bk.homes$outliers <- (log(bk.homes$sale.price.n) <= 5) + 0
