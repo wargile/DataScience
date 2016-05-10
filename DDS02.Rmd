@@ -129,7 +129,6 @@ Many of these questions represent open research questions for the statistical an
 
 ```
 ```
-
 #### Terminology: Big Data
 
 We’ve been throwing around “Big Data” quite a lot already and are guilty of barely defining it beyond raising some big questions in the previous chapter.
@@ -143,7 +142,6 @@ A few ways to think about Big Data:
 **Big Data is a cultural phenomenon.** It describes how much data is part of our lives, precipitated by accelerated advances in technology.
 
 **The 4 Vs:** Volume, variety, velocity, and value. Many people are circulating this as a way to characterize Big Data. Take from it what you will.
-
 ```
 ```
 
@@ -638,7 +636,7 @@ You can use any or all of the datasets here — start with Manhattan August, 201
 
 6. Doug mentioned the company didn’t necessarily have a data strategy. There is no industry standard for creating one. As you work through this assignment, think about whether there is a set of best practices you would recommend with respect to developing a data strategy for an online business, or in your own domain.
 
-Sample R code
+#### Sample R code
 
 Here’s some sample R code that takes the Brooklyn housing data in the preceding exercise, and cleans and explores it a bit. (The exercise asks you to do this for Manhattan.)
 
