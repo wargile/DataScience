@@ -270,11 +270,74 @@ Figure 1.8: SD of Signal Strength by Mean Signal Strength. The average and SD fo
 
 ```
 
+Figure 1.9: Comparison of Mean and Median Signal Strength. This smoothed scatter plot shows the difference between the mean and median signal strength for each combination of location, access point, and angle against the number of observations. These differences are close to 0 with a typical deviation of 1 to 2 dBm.
+
 ### 1.4.2 The Relationship between Signal and Distance
 
 ```{r comment=NA}
 
 ```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+Figure 1.10: 
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+Figure 1.11:
 
 ## 1.5 Nearest neighbor Methods to Predict Location
 
