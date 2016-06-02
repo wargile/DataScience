@@ -341,11 +341,27 @@ Figure 1.11: Signal Strength vs. Distance to Access Point. These 48 scatter plot
 
 ## 1.5 Nearest neighbor Methods to Predict Location
 
+### 1.5.1 Preparing the Test Data
+
 ```{r comment=NA}
 
 ```
 
-### 1.5.1 Preparing the Test Data
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
 
 ```{r comment=NA}
 
@@ -357,7 +373,57 @@ Figure 1.11: Signal Strength vs. Distance to Access Point. These 48 scatter plot
 
 ```
 
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
 ### 1.5.3 Finding the Nearest Neighbors
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+Figure 1.12: Floor Plan with Predicted and Actual Locations. The red line segments shown in the floor plan connect the test locations (black dots) to their predicted locations (asterisks). The top plot shows thepredictions for k = 1 and the bottome plot is for k = 3 nearest neighbors. In this model, we use as training data the average signal strength from each of the 166 offline locations (grey dots) to the 6 access points (black squares) for the 3 closest angles to the angle at which the test data was measured.
+
+```{r comment=NA}
+
+```
 
 ```{r comment=NA}
 
