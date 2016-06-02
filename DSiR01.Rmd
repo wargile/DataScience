@@ -463,7 +463,7 @@ Figure 1.12: Floor Plan with Predicted and Actual Locations. The red line segmen
 
 ```
 
-Figure 1.13:
+Figure 1.13: Cross Validated Selection of k. This line plot shows the sum of square errors as a function of the number of neighbors used in predicting the location of a new obseravation. The sums of squared errors are obtained via corss-validation of the offline data.
 
 ```{r comment=NA}
 
@@ -478,3 +478,33 @@ Figure 1.13:
 ```
 
 ## 1.6 Exercises
+
+Q.1
+
+Q.2
+
+Q.3
+
+Q.4
+
+Q.5
+
+Q.6
+
+Q.7
+
+Q.8
+
+Q.9
+
+Q.10
+
+Q.11
+
+Q.12
+
+Q.13
+
+Q.14
+
+Q.15
