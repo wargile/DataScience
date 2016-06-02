@@ -5,6 +5,16 @@ date: "March 2, 2016"
 output: html_document
 ---
 
+**TODO:**
+
+1. Finish outline
+
+2. Add R code
+
+3. Run R code and check
+
+4. Do exercises
+
 2. Business Problems and Data Science Solutions
 Fundamental concepts: A set of canonical data mining tasks; The data mining process; Supervised versus unsupervised data mining.
 From Business Problems to Data Mining Tasks
