@@ -311,7 +311,7 @@ Figure 1.9: Comparison of Mean and Median Signal Strength. This smoothed scatter
 
 ```
 
-Figure 1.10: 
+Figure 1.10: Median Signal at Two Access Points and Two Angles. These four heat maps provide a smooth topographical representation of signal strength. The top two maps are for the access point 00:14:bf:b1:97:90 and the angles 0 (left) and 135 (right). The two bottom heat maps represent the signal strength for the 00:0f:a3:39:e1:c0 and the same two angles.
 
 ```{r comment=NA}
 
@@ -337,7 +337,7 @@ Figure 1.10:
 
 ```
 
-Figure 1.11:
+Figure 1.11: Signal Strength vs. Distance to Access Point. These 48 scatter plots show the relationship between the signal strength and the distance to the access point for each of the 6 access points and 8 orientations of the device. The shape is consistent across panels showing curvature in the relationship.
 
 ## 1.5 Nearest neighbor Methods to Predict Location
 
