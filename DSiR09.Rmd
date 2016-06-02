@@ -5,6 +5,16 @@ date: "March 8, 2016"
 output: html_document
 ---
 
+**TODO:**
+
+1. Finish outline
+
+2. Add R code
+
+3. Run R code and check
+
+4. Do exercises
+
 *Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving*
 
 by Deborah Nolan and Duncan Temple Lang
