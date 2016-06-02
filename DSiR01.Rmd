@@ -221,11 +221,50 @@ Figure 1.5: Counts of signals detected at each position. Plotted at each locatio
 
 ## 1.4 Signal Strength Analysis
 
+### 1.4.1 Distribution of Signal Strength
+
+```{r comment=NA}
+
+```
+Figure 1.6: Signal Stenght by Angle for Each Access Point. The boxplots in this figure represent signals for one location, which is in the uper left corner of the floor plan, i.e., x = 2 and y = 12. These boxes are organized by access point and the angle of the hand-held device. The dependence of signal strength on angle is evident at serveral of the access points, e.g., 00:14:bf:97:90 in the top right panel of the figure.
+
 ```{r comment=NA}
 
 ```
 
-### 1.4.1 Distribution of Signal Strength
+Figure 1.7: Distribution of Signal Angle for Each Access Point. The density curves show here are for the signal strengths measure at the postion: x = 24 and y = 4. These 48 density plots represent each of the access point x angle combinations. There are roughly 110 observations in each pannel. Some look roughly normal while many others look skewed left.
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+Figure 1.8: SD of Signal Strength by Mean Signal Strength. The average and SD for the signals detected at each location-angle-access point combination are plotted against each other. The weak signals have low variability and the stronger signals have greater variability.
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
 
 ```{r comment=NA}
 
