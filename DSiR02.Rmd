@@ -25,26 +25,26 @@ http://www.rdatasciencecases.org
 
 by Daniel Kaplan and Deborah Nolan
 
-2.1 Introduction
+## 2.1 Introduction
 
-2.1.1 Computational Topics
+### 2.1.1 Computational Topics
 
-2.2 Reading Tables of Race Results into R
+## 2.2 Reading Tables of Race Results into R
 
-2.3 Data Cleaning and Reformatting Variables
+## 2.3 Data Cleaning and Reformatting Variables
 
-2.4 Exploring the Run Time for All Male Runners
+## 2.4 Exploring the Run Time for All Male Runners
 
-2.4.1 Making Plots with Many Observations
+### 2.4.1 Making Plots with Many Observations
 
-2.4.2 Fitting Models to Average Performance
+### 2.4.2 Fitting Models to Average Performance
 
-2.4.3 Cross-Sectional Data and Covariates
+### 2.4.3 Cross-Sectional Data and Covariates
 
-2.5 Constructing a Record for an Individual Runner across Years
+## 2.5 Constructing a Record for an Individual Runner across Years
 
-2.6 Modeling the Change in Running Time for Individuals
+## 2.6 Modeling the Change in Running Time for Individuals
 
-2.7 Scraping Race Results form the Web
+## 2.7 Scraping Race Results form the Web
 
-2.8 Exercises
+## 2.8 Exercises
