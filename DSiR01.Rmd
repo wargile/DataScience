@@ -435,4 +435,46 @@ Figure 1.12: Floor Plan with Predicted and Actual Locations. The red line segmen
 
 ```
 
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+Figure 1.13:
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
+```{r comment=NA}
+
+```
+
 ## 1.6 Exercises
