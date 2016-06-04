@@ -6,10 +6,10 @@ output: html_document
 ---
 
 ```{r, comment=NA}
-library(doBy) # for 'summaryBy' function
+library(doBy)    # for 'summaryBy' function
 library(ggplot2)
-library(gdata) # for 'read.xls' function
-library(plyr) # for 'count' function
+library(gdata)   # for 'read.xls' function
+library(plyr)    # for 'count' function
 ```
 
 *Doing Data Science*
@@ -161,7 +161,7 @@ They describe these steps in a rather grand fashion by claiming that Big Data do
 
 Here’s the thing: it’s pretty much never all. And we are very often missing the very things we should care about most.
 
-So, for example, as this InfoWorld post explains, Internet surveillance will never really work, because the very clever and tech-savvy criminals that we most want to catch are the very ones we will never be able to catch, because they’re always a step ahead.
+So, for example, as this InfoWorld post [1] explains, Internet surveillance will never really work, because the very clever and tech-savvy criminals that we most want to catch are the very ones we will never be able to catch, because they’re always a step ahead.
 
 An example from that very article — election night polls — is in itself a great counter-example: even if we poll absolutely everyone who leaves the polling stations, we still don’t count people who decided not to vote in the first place. And those might be the very people we’d need to talk to to understand our country’s voting problems.
 
@@ -173,7 +173,7 @@ Those people, busy working two jobs and spending time waiting for buses, become 
 
 Another way in which the assumption that N = ALL can matter is that it often gets translated into the idea that data is objective. It is wrong to believe either that data is objective or that “data speaks,” and beware of people who say otherwise.
 
-We were recently reminded of it in a terrifying way by this New York Times article on Big Data and recruiter hiring practices. At one point, a data scientist is quoted as saying, “Let’s put everything in and let the data speak for itself.”
+We were recently reminded of it in a terrifying way by this New York Times article [2] on Big Data and recruiter hiring practices. At one point, a data scientist is quoted as saying, “Let’s put everything in and let the data speak for itself.”
 
 If you read the whole article, you’ll learn that this algorithm tries to find “diamond in the rough” types of people to hire. A worthy effort, but one that you have to think through.
 
@@ -199,7 +199,7 @@ Rachel had a recent phone conversation with someone about a modeling workshop, a
 
 Even if you’ve used the terms statistical model or mathematical model for years, is it even clear to yourself and to the people you’re talking to what you mean? What makes a model a model? Also, while we’re asking fundamental questions like this, what’s the difference between a statistical model and a machine learning algorithm?
 
-Before we dive deeply into that, let’s add a bit of context with this deliberately provocative Wired magazine piece, “The End of Theory: The Data Deluge Makes the Scientific Method Obsolete,” published in 2008 by Chris Anderson, then editor-in-chief.
+Before we dive deeply into that, let’s add a bit of context with this deliberately provocative Wired magazine piece, “The End of Theory: The Data Deluge Makes the Scientific Method Obsolete,” [3] published in 2008 by Chris Anderson, then editor-in-chief.
 
 Anderson equates massive amounts of data to complete information and argues no models are necessary and “correlation is enough”; e.g., that in the context of massive amounts of data, “they [Google] don’t have to settle for models at all.”
 
@@ -273,9 +273,7 @@ A random variable denoted by x or y can be assumed to have a corresponding proba
 
 For example, let x be the amount of time until the next bus arrives (measured in seconds). x is a random variable because there is variation and uncertainty in the amount of time until the next bus.
 
-Suppose we know (for the sake of argument) that the time until the next bus has a probability density function of p(x) = 2\*exp(−2\*x). If we want
-to know the likelihood of the next bus arriving in between 12 and 13 minutes, then we find the area under the curve between 12 and 13 by
-integral(2\*exp(−2\*x), 12, 13).
+Suppose we know (for the sake of argument) that the time until the next bus has a probability density function of p(x) = 2\*exp(−2\*x). If we want to know the likelihood of the next bus arriving in between 12 and 13 minutes, then we find the area under the curve between 12 and 13 by integral(2\*exp(−2\*x), 12, 13).
 
 How do we know this is the right distribution to use? Well, there are two possible ways: we can conduct an experiment where we show up at the bus stop at a random time, measure how much time until the next bus, and repeat this experiment over and over again. Then we look at the measurements, plot them, and approximate the function as discussed. Or, because we are familiar with the fact that “waiting time” is a common enough real-world phenomenon that a distribution called the exponential distribution has been invented to describe it, we know that it takes the form p(x) = λ*exp(−λ*x).
 
@@ -375,7 +373,7 @@ Here are some references to help you understand best practices and historical co
 
 5. “Exploratory Data Analysis for Complex Models” by Andrew Gelman (American Statistical Association)
 
-6. *The Future of Data Analysis* by John Tukey. Annals of Mathematical Statistics, Volume 33, Number 1 (1962), 1-67.
+6. *The Future of Data Analysis* by John Tukey. Annals of Mathematical Statistics, Volume 33, Number 1 (1962), 1-67. [4]
 
 7. *Data Analysis, Exploratory* by David Brillinger [8-page excerpt from International Encyclopedia of Political Science (Sage)]
 
@@ -383,9 +381,9 @@ Here are some references to help you understand best practices and historical co
 
 There are 31 datasets named nyt1.csv, nyt2.csv,..., nyt31.csv, which you can find here: https://github.com/oreillymedia/doing_data_science.
 
-Each one represents one (simulated) day’s worth of ads shown and clicks recorded on the New York Times home page in May 2012. Each row represents a single user. There are five columns: age, gender (0=female, 1=male), number impressions, number clicks, and logged-in.
+Each one represents one (simulated) day’s worth of ads shown and clicks recorded on the New York Times home page in May 2012. Each row represents a single user. There are five columns: age, gender (0 = female, 1 = male), number impressions, number clicks, and logged-in.
 
-You’ll be using R to handle these data. It’s a programming language designed specifically for data analysis, and it’s pretty intuitive to start using. You can download it here. Once you have it installed, you can load a single file into R with this command:
+You’ll be using R to handle these data. It’s a programming language designed specifically for data analysis, and it’s pretty intuitive to start using. You can download it here [5]. Once you have it installed, you can load a single file into R with this command:
 
 ```
 data1 <- read.csv(url("http://stat.columbia.edu/~rachel/datasets/nyt1.csv"))
@@ -393,8 +391,7 @@ data1 <- read.csv(url("http://stat.columbia.edu/~rachel/datasets/nyt1.csv"))
 
 Once you have the data loaded, it’s time for some EDA:
 
-1. Create a new variable, age_group, that categorizes users as "<18",
-"18-24", "25-34", "35-44", "45-54", "55-64", and "65+".
+1. Create a new variable, age_group, that categorizes users as "<18", "18-24", "25-34", "35-44", "45-54", "55-64", and "65+".
 
 2. For a single day:
 
@@ -414,7 +411,7 @@ Once you have the data loaded, it’s time for some EDA:
 
 Here we’ll give you the beginning of a sample solution for this exercise. The reality is that we can’t teach you about data science and teach you how to code all in the same book. Learning to code in a new language requires a lot of trial and error as well as going online and searching on Google or stackoverflow.
 
-Chances are, if you’re trying to figure out how to plot something or build a model in R, other people have tried as well, so rather than banging your head against the wall, look online. [Ed note: There might also be some books available to help you out on this front as well.] We suggest not looking at this code until you’ve struggled along a bit:
+Chances are, if you’re trying to figure out how to plot something or build a model in R, other people have tried as well, so rather than banging your head against the wall, look online. [Ed note: There might also be some books [6] available to help you out on this front as well.] We suggest not looking at this code until you’ve struggled along a bit:
 
 ```{r, comment=NA}
 # Author: Maura Fitzgerald
@@ -500,7 +497,6 @@ Eventually we get the data down to a nice format, like something with columns:
 
     name | event | year | gender | event time
 
-
 ```
 ```
 This is where you typically start in a standard statistics class, with a clean, orderly dataset. But it’s not where you typically start in the real world.
@@ -555,13 +551,13 @@ In both the data science process and the scientific method, not every problem re
 
 Most data problems start out with a certain amount of dirty data, ill- defined questions, and urgency. As data scientists we are, in a sense, attempting to create order from chaos. The class took a break from the lecture to discuss how they’d simulate chaos. Here are some ideas from the discussion:
 
-- A Lorenzian water wheel, which is a Ferris wheel-type contraption with equally spaced buckets of water that rotate around in a circle. Now imagine water being dripped into the system at the very top. Each bucket has a leak, so some water escapes into whatever bucket is directly below the drip. Depending on the rate of the water coming in, this system exhibits a chaotic process that depends on molecular-level interactions of water molecules on the sides of the buckets. Read more about it in this associated Wikipedia article.
+- A Lorenzian water wheel, which is a Ferris wheel-type contraption with equally spaced buckets of water that rotate around in a circle. Now imagine water being dripped into the system at the very top. Each bucket has a leak, so some water escapes into whatever bucket is directly below the drip. Depending on the rate of the water coming in, this system exhibits a chaotic process that depends on molecular-level interactions of water molecules on the sides of the buckets. Read more about it in this associated Wikipedia article [7].
 
-- Many systems can exhibit inherent chaos. Philippe M. Binder and Roderick V. Jensen have written a paper entitled “Simulating chaotic behavior with finite-state machines”, which is about digital computer simulations of chaos.
+- Many systems can exhibit inherent chaos. Philippe M. Binder and Roderick V. Jensen have written a paper entitled “Simulating chaotic behavior with finite-state machines” [8], which is about digital computer simulations of chaos.
 
-- An interdisciplinary program involving M.I.T., Harvard, and Tufts involved teaching a technique that was entitled “Simulating chaos to teach order”. They simulated an emergency on the border between Chad and Sudan’s troubled Darfur region, with students acting as members of Doctors Without Borders, International Medical Corps, and other humanitarian agencies.
+- An interdisciplinary program involving M.I.T., Harvard, and Tufts involved teaching a technique that was entitled “Simulating chaos to teach order” [9]. They simulated an emergency on the border between Chad and Sudan’s troubled Darfur region, with students acting as members of Doctors Without Borders, International Medical Corps, and other humanitarian agencies.
 
-- See also Joel Gascoigne’s related essay, “Creating order from chaos in a startup”.
+- See also Joel Gascoigne’s related essay, “Creating order from chaos in a startup” [10].
 
 ```
 ```
@@ -692,3 +688,23 @@ bk.homes <- bk.homes[which(bk.homes$outliers == 0), ]
 
 plot(log(bk.homes$gross.sqft), log(bk.homes$sale.price.n))
 ```
+
+[1] http://www.infoworld.com/article/2614523/federal-regulations/why-internet-surveillance-will-never-work.html
+
+[2] http://www.nytimes.com/2013/04/28/technology/how-big-data-is-playing-recruiter-for-specialized-workers.html?pagewanted=4&ref=business&pagewanted=all&_r=2&
+
+[3] http://www.wired.com/2008/06/pb-theory/
+
+[4] http://web.stanford.edu/~gavish/documents/Tukey_the_future_of_data_analysis.pdf
+
+[5] https://www.r-project.org
+
+[6] http://www.oreilly.com
+
+[7] https://en.wikipedia.org/wiki/User:Pankajgarg_india/The_lorenzian_waterwheel
+
+[8] http://journals.aps.org/pra/abstract/10.1103/PhysRevA.34.4460
+
+[9] http://news.harvard.edu/gazette/story/2009/04/simulating-chaos-to-teach-order/
+
+[10] http://joel.is/creating-order-from-chaos-in-a-startup/
