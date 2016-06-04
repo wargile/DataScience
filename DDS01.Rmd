@@ -71,7 +71,7 @@ Considering the impact of this feedback loop, we should start thinking seriously
 
 ### Datafication
 
-In the May/June 2013 issue of Foreign Affairs, Kenneth Neil Cukier and Viktor Mayer-Schoenberger wrote an article called “The Rise of Big Data”. In it they discuss the concept of datafication, and their example is how we quantify friendships with “likes”: it’s the way everything we do, online or otherwise, ends up recorded for later examination in someone’s data storage units. Or maybe multiple storage units, and maybe also for sale.
+In the May/June 2013 issue of Foreign Affairs, Kenneth Neil Cukier and Viktor Mayer-Schoenberger wrote an article called “The Rise of Big Data” [1]. In it they discuss the concept of datafication, and their example is how we quantify friendships with “likes”: it’s the way everything we do, online or otherwise, ends up recorded for later examination in someone’s data storage units. Or maybe multiple storage units, and maybe also for sale.
 
 They define datafication as a process of “taking all aspects of life and turning them into data.” As examples, they mention that “Google’s augmented-reality glasses datafy the gaze. Twitter datafies stray thoughts. LinkedIn datafies professional networks.”
 
@@ -91,7 +91,7 @@ If we want to think bigger, if we want our “we” to refer to people in genera
 
 So, what is data science? Is it new, or is it just statistics or analytics rebranded? Is it real, or is it pure hype? And if it’s new and if it’s real, what does that mean?
 
-This is an ongoing discussion, but one way to understand what’s going on in this industry is to look online and see what current discussions are taking place. This doesn’t necessarily tell us what data science is, but it at least tells us what other people think it is, or how they’re perceiving it. For example, on Quora there’s a discussion from 2010 about “What is Data Science?” and here’s Metamarket CEO Mike Driscoll’s answer:
+This is an ongoing discussion, but one way to understand what’s going on in this industry is to look online and see what current discussions are taking place. This doesn’t necessarily tell us what data science is, but it at least tells us what other people think it is, or how they’re perceiving it. For example, on Quora there’s a discussion from 2010 about “What is Data Science?” and here’s Metamarket CEO Mike Driscoll’s answer [2]:
 
 *Data science, as it’s practiced, is a blend of Red-Bull-fueled hacking and espresso-inspired statistics.*
 
@@ -101,11 +101,11 @@ This is an ongoing discussion, but one way to understand what’s going on in th
 
 *Data science is the civil engineering of data. Its acolytes possess a practical knowledge of tools and materials, coupled with a theoretical understanding of what’s possible.*
 
-Driscoll then refers to Drew Conway’s Venn diagram of data science from 2010, shown in Figure 1-1.
+Driscoll then refers to Drew Conway’s Venn diagram of data science [?] from 2010, shown in Figure 1-1.
 
 Figure 1-1. Drew Conway’s Venn diagram of data science
 
-He also mentions the sexy skills of data geeks from Nathan Yau’s 2009 post, “Rise of the Data Scientist”, which include:
+He also mentions the sexy skills of data geeks from Nathan Yau’s 2009 post, “Rise of the Data Scientist” [3], which include:
 
 - Statistics (traditional analysis you’re used to thinking about) 
 
@@ -115,20 +115,21 @@ He also mentions the sexy skills of data geeks from Nathan Yau’s 2009 post, �
 
 But wait, is data science just a bag of tricks? Or is it the logical extension of other fields like statistics and machine learning?
 
-For one argument, see Cosma Shalizi’s posts here and here, and Cathy’s posts here and here, which constitute an ongoing discussion of the difference between a statistician and a data scientist. Cosma basically argues that any statistics department worth its salt does all the stuff in the descriptions of data science that he sees, and therefore data science is just a rebranding and unwelcome takeover of statistics.
+For one argument, see Cosma Shalizi’s posts here [?] and here [?], and Cathy’s posts here [4] and here [5], which constitute an ongoing discussion of the difference between a statistician and a data scientist. Cosma basically argues that any statistics department worth its salt does all the stuff in the descriptions of data science that he sees, and therefore data science is just a rebranding and unwelcome takeover of statistics.
 
-For a slightly different perspective, see ASA President Nancy Geller’s 2011 Amstat News article, “Don’t shun the ‘S’ word”, in which she defends statistics:
+For a slightly different perspective, see ASA President Nancy Geller’s 2011 Amstat News article, “Don’t shun the ‘S’ word” [6], in which she defends statistics:
 
 *We need to tell people that Statisticians are the ones who make sense of the data deluge occurring in science, engineering, and medicine; that statistics provides methods for data analysis in all fields, from art history to zoology; that it is exciting to be a Statistician in the 21st century because of the many challenges brought about by the data explosion in all of these fields.*
 
 Though we get her point — the phrase “art history to zoology” is supposed to represent the concept of A to Z — she’s kind of shooting herself in the foot with these examples because they don’t correspond to the high-tech world where much of the data explosion is coming from. Much of the development of the field is happening in industry, not academia. That is, there are people with the job title data scientist in companies, but no professors of data science in academia. (Though this may be changing.)
 
-Not long ago, DJ Patil described how he and Jeff Hammerbacher — then at LinkedIn and Facebook, respectively — coined the term “data scientist” in 2008. So that is when “data scientist” emerged as a job title. (Wikipedia finally gained an entry on data science in 2012.)
+Not long ago, DJ Patil described [7] how he and Jeff Hammerbacher — then at LinkedIn and Facebook, respectively — coined the term “data scientist” in 2008. So that is when “data scientist” emerged as a job title. (Wikipedia finally gained an entry on data science in 2012.)
 
-It makes sense to us that once the skill set required to thrive at Google — working with a team on problems that required a hybrid skill set of stats and computer science paired with personal characteristics including curiosity and persistence — spread to other Silicon Valley tech companies, it required a new job title. Once it became a pattern, it deserved a name. And once it got a name, everyone and their mother wanted to be one. It got even worse when Harvard Business Review declared data scientist to be the “Sexiest Job of the 21st Century”.
+It makes sense to us that once the skill set required to thrive at Google — working with a team on problems that required a hybrid skill set of stats and computer science paired with personal characteristics including curiosity and persistence — spread to other Silicon Valley tech companies, it required a new job title. Once it became a pattern, it deserved a name. And once it got a name, everyone and their mother wanted to be one. It got even worse when Harvard Business Review declared data scientist to be the “Sexiest Job of the 21st Century” [8].
 
 ```
-The Role of the Social Scientist in Data Science
+```
+**The Role of the Social Scientist in Data Science**
 
 Both LinkedIn and Facebook are social network companies. Oftentimes a description or definition of data scientist includes hybrid statistician, software engineer, and social scientist. This made sense in the context of companies where the product was a social product and still makes sense when we’re dealing with human or user behavior. But if you think about Drew Conway’s Venn diagram, data science problems cross disciplines — that’s what the substantive expertise is referring to.
 
@@ -136,16 +137,17 @@ In other words, it depends on the context of the problems you’re trying to sol
 
 But it’s almost a “historical” (historical is in quotes because 2008 isn’t that long ago) artifact to limit your conception of a data scientist to someone who works only with online user behavior data. There’s another emerging field out there called computational social sciences, which could be thought of as a subset of data science.
 ```
+```
 
-But we can go back even further. In 2001, William Cleveland wrote a position paper about data science called “Data Science: An action plan to expand the field of statistics.”
+But we can go back even further. In 2001, William Cleveland wrote a position paper [?] about data science called “Data Science: An action plan to expand the field of statistics.”
 
 So data science existed before data scientists? Is this semantics, or does it make sense?
 
-This all begs a few questions: can you define data science by what data scientists do? Who gets to define the field, anyway? There’s lots of buzz and hype — does the media get to define it, or should we rely on the practitioners, the self-appointed data scientists? Or is there some actual authority? Let’s leave these as open questions for now, though we will return to them throughout the book.
+This all begs a few questions: can you define data science by what data scientists do? Who gets to define the field, anyway? There’s lots of buzz [9] and hype — does the media get to define it, or should we rely on the practitioners, the self-appointed data scientists? Or is there some actual authority? Let’s leave these as open questions for now, though we will return to them throughout the book.
 
 ### Data Science Jobs
 
-Columbia just decided to start an Institute for Data Sciences and Engineering with Bloomberg’s help. There are 465 job openings in New York City alone for data scientists last time we checked. That’s a lot. So even if data science isn’t a real field, it has real jobs.
+Columbia just decided to start an Institute for Data Sciences and Engineering [10] with Bloomberg’s help [11]. There are 465 job openings in New York City alone for data scientists last time we checked. That’s a lot. So even if data science isn’t a real field, it has real jobs.
 
 And here’s one thing we noticed about most of the job descriptions: they ask data scientists to be experts in computer science, statistics, communication, data visualization, and to have extensive domain expertise. Nobody is an expert in everything, which is why it makes more sense to create teams of people who have different profiles and different expertise — together, as a team, they can specialize in all those things. We’ll talk about this more after we look at the composite set of skills in demand for today’s data scientists.
 
@@ -193,9 +195,9 @@ We could do a Google search for “data science” and perform a text- mining mo
 
 How about we look at practitioners of data science and see how they describe what they do (maybe in a word cloud for starters)? Then we can look at how people who claim to be other things like statisticians or physicists or economists describe what they do. From there, we can try to use a clustering algorithm (which we’ll use in Chapter 3) or some other model and see if, when it gets as input “the stuff someone does,” it gives a good prediction on what field that person is in.
 
-Just for comparison, check out what Harlan Harris recently did related to the field of data science: he took a survey and used clustering to define subfields of data science, which gave rise to Figure 1-4.
+Just for comparison, check out what Harlan Harris recently did related to the field of data science: he took a survey and used clustering to define subfields of data science [12], which gave rise to Figure 1-4.
 
-Figure 1-4. Harlan Harris’s clustering and visualization of subfields of data science from Analyzing the Analyzers (O’Reilly) by Harlan Harris, Sean Murphy, and Marck Vaisman based on a survey of several hundred data science practitioners in mid-2012
+Figure 1-4. Harlan Harris’s clustering and visualization of subfields of data science from *Analyzing the Analyzers* [13] (O’Reilly) by Harlan Harris, Sean Murphy, and Marck Vaisman based on a survey of several hundred data science practitioners in mid-2012
 
 ## OK, So What Is a Data Scientist, Really?
 
@@ -224,3 +226,29 @@ More generally, a data scientist is someone who knows how to extract meaning fro
 Once she gets the data into shape, a crucial part is exploratory data analysis, which combines visualization and data sense. She’ll find patterns, build models, and algorithms — some with the intention of understanding product usage and the overall health of the product, and others to serve as prototypes that ultimately get baked back into the product. She may design experiments, and she is a critical part of data- driven decision making. She’ll communicate with team members, engineers, and leadership in clear language and with data visualizations so that even if her colleagues are not immersed in the data themselves, they will understand the implications.
 
 That’s the high-level picture, and this book is about helping you understand the vast majority of it. We’re done with talking about data science; let’s go ahead and do some!
+
+[1] https://www.foreignaffairs.com/articles/2013-04-03/rise-big-data
+
+[2] https://www.quora.com/What-is-data-science
+
+[3] http://flowingdata.com/2009/06/04/rise-of-the-data-scientist/
+
+[4] https://mathbabe.org/2011/09/25/why-and-how-to-hire-a-data-scientist-for-your-business/
+
+[5] http://www.nakedcapitalism.com/2012/07/cathy-oneil-data-science-the-problem-isnt-statisticians-its-too-many-poseurs.html
+
+[6] http://magazine.amstat.org/blog/2011/08/01/prescorneraug11/
+
+[7] http://radar.oreilly.com/2011/09/building-data-science-teams.html
+
+[8] https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
+
+[9] http://business.time.com/2012/07/31/big-data-knows-what-youre-doing-right-now/
+
+[10] http://datascience.columbia.edu
+
+[11] https://www.mikebloomberg.com/news/nyc-and-columbia-to-create-institute-for-data-sciences-engineering/
+
+[12] http://www.datacommunitydc.org/blog/2012/08/data-scientists-survey-results-teaser/
+
+[13] http://shop.oreilly.com/product/0636920029014.do
