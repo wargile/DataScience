@@ -5,6 +5,13 @@ date: "May 8, 2016"
 output: html_document
 ---
 
+```{r, comment=NA}
+library(class)   # for 'knn' function
+library(gdata)   # for 'read.xls' function
+# package ‘geoPlot’ is not available (for R version 3.2.3)
+#library(geoPlot) # for 'addrListLookup' function 
+```
+
 *Doing Data Science*
 
 by Rachel Schutt and Cathy O’Neil
@@ -284,21 +291,9 @@ This is called the mean squared error and captures how much the predicted value 
 
 We asked earlier how confident you would be in these estimates and in your model. You have a couple values in the output of the R function that help you get at the issue of how confident you can be in the estimates: p-values and R-squared. Going back to our model in R, if we type in summary(model), which is the name we gave to this model, the output would be:
 
-    summary (model)
-    Call:
-    lm(formula = y ~ x)
-Residuals:
-    Min      1Q  Median
-                             3Q     Max
--121.17  -52.63   -9.72   41.54  356.27
-    Coefficients:
-                Estimate Std. Error t value Pr(>|t|)
-    (Intercept)  -32.083     16.623   -1.93   0.0565 .
-    x             45.918      2.141   21.45   <2e-16 ***
-    Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-    Residual standard error: 77.47 on 98 degrees of freedom
-    Multiple R-squared: 0.8244,    Adjusted R-squared: 0.8226
-    F-statistic:   460 on 1 and 98 DF,  p-value: < 2.2e-16
+```{r, comment=NA}
+summary (model)
+```
 
 *R-squared*
 
@@ -371,10 +366,9 @@ To help understand and explore new concepts, you can simulate fake datasets in R
 Once you’ve better understood what’s going on with your fake dataset, you can then transfer your understanding to a real one. We’ll show you how to simulate a fake dataset here, then we’ll give you some ideas for how to explore it further:
 
 ```{r, comment=NA}
-# Simulating fake data
-x_1 <- rnorm(1000, 5, 7) # from a normal distribution simulate
-                         # 1000 values with a mean of 5 and
-                         # standard deviation of 7 
+# Simulating fake data from a normal distribution 
+# simulate 1000 values with a mean of 5 and standard deviation of 7 
+x_1 <- rnorm(1000, 5, 7) 
 hist(x_1, col = "grey") # plot p(x)
 true_error <- rnorm(1000, 0, 2)
 true_beta_0 <- 1.1
@@ -518,29 +512,36 @@ To do this, you’ll need to save some clean data from the overall data for the 
 Your R console might look like this:
 
 ```{r, comment=NA}
-> head(data)
-      age income credit
-169 3low 266 57 low 349 79 low 449 17 low 558 26high 644 71high
+age    <- c(69, 66, 49, 49, 58, 44)
+income <- c(3, 57, 79, 17, 26, 71)
+credit <- c("low", "low", "low", "low", "high", "high")
+data   <- data.frame(age, income, credit)
+head(data)
 
-n.points <- 1000 # number of rows in the dataset 
+#n.points <- 1000 # number of rows in the dataset 
+n.points <- 6 # number of rows in the dataset 
 sampling.rate <- 0.8
 
 # we need the number of points in the test set to calculate 
 # the misclassification rate
-num.test.set.labels <- n.points * (1 - sampling.rate)
+#num.test.set.labels <- n.points * (1 - sampling.rate)
+num.test.set.labels <- round(n.points * (1 - sampling.rate))
+num.test.set.labels
 
 # randomly sample which rows will go in the training set
-training <- sample(1:n.points, sampling.rate * n.points, replace=FALSE)
-train <- subset(data[training, ], select = c(Age, Income)) 
+training <- sample(1:n.points, sampling.rate * n.points, replace = FALSE)
+train <- subset(data[training, ], select = c(age, income)) 
+
 # define the training set to be those rows
 # the other rows are going into the test set
 testing <- setdiff(1:n.points, training)
 # define the test set to be the other rows
-test <- subset(data[testing, ], select = c(Age, Income))
+test <- subset(data[testing, ], select = c(age, income))
 
-cl <- data$Credit[training]
+#cl <- data$Credit[training]
+cl <- data$credit[training]
 # this is the subset of labels for the training set 
-true.labels <- data$Credit[testing]
+true.labels <- data$credit[testing]
 # subset of labels for the test set, we're withholding these
 ```
 
@@ -573,7 +574,7 @@ Now that you have a distance measure and an evaluation metric, you’re ready to
 For each person in your test set, you’ll pretend you don’t know his label. Look at the labels of his three nearest neighbors, say, and use the label of the majority vote to label him. You’ll label all the members of the test set and then use the misclassification rate to see how well you did. All this is done automatically in R, with just this single line of R code:
 
 ```{r, comment=NA}
-knn (train, test, cl, k = 3) 
+knn(train, test, cl, k = 3) 
 ```
 
 #### Choosing k
@@ -618,9 +619,8 @@ Here’s the output in the form (k, misclassification rate):
 So let’s go with k = 5 because it has the lowest misclassification rate, and now you can apply it to your guy who is 57 with a $37,000 salary. In the R console, it looks like:
 
 ```{r, comment=NA}
-> test <- c(57,37)
-> knn(train,test,cl, k = 5)
-[1] low
+test <- c(57, 37)
+knn(train, test, cl, k = 5)
 ```
 
 The output by majority vote is a low credit score when k = 5.
@@ -669,7 +669,7 @@ Why would you want to do this? Here are a few examples:
 
 - You might have a model that works better for specific groups. Or you might have different models for different groups.
 
-- Hierarchical modeling in statistics does something like this; for example, to separately model geographical effects from household effects in survey results.
+- Hierarchical modeling [1] in statistics does something like this; for example, to separately model geographical effects from household effects in survey results.
 
 To see why an algorithm like this might be useful, let’s first try to construct something by hand. That might mean you’d bucket users using handmade thresholds.
 
@@ -735,7 +735,7 @@ Your dataset needs to be a matrix, x, each column of which is one of your featur
 
 Wait, didn’t we just describe the algorithm? It turns out there’s more than one way to go after k-means clustering.
 
-The standard k-means algorithm is attributed to separate work by Hugo Steinhaus and Stuart Lloyd in 1957, but it wasn’t called “k- means” then. The first person to use that term was James MacQueen in 1967. It wasn’t published outside Bell Labs until 1982.
+The standard k-means algorithm is attributed to separate work by Hugo Steinhaus and Stuart Lloyd in 1957, but it wasn’t called “k-means” then. The first person to use that term was James MacQueen in 1967. It wasn’t published outside Bell Labs until 1982.
 
 Newer versions of the algorithm are Hartigan-Wong and Lloyd and Forgy, named for their inventors and developed throughout the ’60s and ’70s. The algorithm we described is the default, Hartigan-Wong. It’s fine to use the default.
 
@@ -763,21 +763,45 @@ In the preceding chapter, we showed how explore and clean this dataset, so you�
 
 #### Sample R code: Linear regression on the housing dataset
 
-```{r, comment=NA}
+```{r, comment=NA, error=FALSE}
 # Author: Ben Reddy
 
+# From Chapter 2 to recreate data frame
+# first download "rollingsales_brooklyn.xls" to working directory
+setwd("~/GitHub/DataScience")
+bk <- read.xls("rollingsales_brooklyn.xls", pattern = "BOROUGH")
+bk$SALE.PRICE.N <- as.numeric(gsub("[^[:digit:]]", "", bk$SALE.PRICE))
+names(bk) <- tolower(names(bk))
+
+# clean/format the data with regular expressions
+bk$gross.sqft <- as.numeric(gsub("[^[:digit:]]", "", bk$gross.square.feet))
+bk$land.sqft <- as.numeric(gsub("[^[:digit:]]", "", bk$land.square.feet))
+
+bk$sale.date <- as.Date(bk$sale.date)
+bk$year.built <- as.numeric(as.character(bk$year.built))
+
+# keep only the actual sales
+bk.sale <- bk[bk$sale.price.n != 0, ]
+
+# for now, let's look at 1-, 2-, and 3-family homes
+bk.homes <- bk.sale[which(grepl("FAMILY", bk.sale$building.class.category)), ]
+
+bk.homes$outliers <- (log(bk.homes$sale.price.n) <= 5) + 0
+bk.homes <- bk.homes[which(bk.homes$outliers == 0), ]
+
+# Chapter 3 code
 model1 <- lm(log(sale.price.n) ~ log(gross.sqft), data = bk.homes)
 # what's going on here?
 
-bk.homes[which(bk.homes$gross.sqft==0),]
+bk.homes[which(bk.homes$gross.sqft == 0), ]
 
-bk.homes <- bk.homes[which(bk.homes$gross.sqft>0 & 
-            bk.homes$land.sqft>0),]
-model1 <- lm(log(sale.price.n) ~ log(gross.sqft),data=bk.homes)
+bk.homes <- bk.homes[which(bk.homes$gross.sqft > 0 & 
+                           bk.homes$land.sqft > 0), ]
+model1 <- lm(log(sale.price.n) ~ log(gross.sqft),data = bk.homes)
 summary(model1)
 
-plot(log(bk.homes$gross.sqft),log(bk.homes$sale.price.n))
-abline(model1,col="red",lwd=2)
+plot(log(bk.homes$gross.sqft), log(bk.homes$sale.price.n))
+abline(model1, col = "red", lwd = 2)
 plot(resid(model1))
 
 model2 <- lm(log(sale.price.n) ~ log(gross.sqft) +
@@ -813,12 +837,8 @@ plot(resid(model4))
 
 ```{r, comment=NA}
 # Author: Ben Reddy
-require(gdata)
-require(geoPlot)
-require(class)
 
-setwd("~/Documents/Teaching/Stat 4242 Fall 2012/Homework 2")
-
+#setwd("~/Documents/Teaching/Stat 4242 Fall 2012/Homework 2")
 mt <- read.xls("rollingsales_manhattan.xls",
                pattern = "BOROUGH",
                stringsAsFactors = FALSE)
@@ -827,18 +847,15 @@ summary(mt)
 
 names(mt) <- tolower(names(mt))
 
-mt$sale.price.n <- as.numeric(gsub("[^[:digit:]]", "",
-                              mt$sale.price))
+mt$sale.price.n <- as.numeric(gsub("[^[:digit:]]", "", mt$sale.price))
 sum(is.na(mt$sale.price.n))
 sum(mt$sale.price.n == 0)
 
 names(mt) <- tolower(names(mt))
 
 # clean/format the data with regular expressions
-mt$gross.sqft <- as.numeric(gsub("[^[:digit:]]","",
-                            mt$gross.square.feet))
-mt$land.sqft <- as.numeric(gsub("[^[:digit:]]","",
-                           mt$land.square.feet))
+mt$gross.sqft <- as.numeric(gsub("[^[:digit:]]","", mt$gross.square.feet))
+mt$land.sqft <- as.numeric(gsub("[^[:digit:]]","", mt$land.square.feet))
 
 mt$sale.date <- as.Date(mt$sale.date)
 mt$year.built <- as.numeric(as.character(mt$year.built))
@@ -851,38 +868,91 @@ mt$zip.code <- as.character(mt$zip.code)
 # possibly tax block; 
 # outside dataset for coords of tax block/lot?) 
 min_price <- 10000
-mt <- mt[which(mt$sale.price.n>=min_price),]
+mt <- mt[which(mt$sale.price.n >= min_price), ]
 
 n_obs <- dim(mt)[1]
 
-mt$address.noapt <- gsub("[,][[:print:]]*","",
-                    gsub("[ ]+"," ",trim(mt$address)))
+mt$address.noapt <- gsub("[,][[:print:]]*","", gsub("[ ]+"," ",trim(mt$address)))
 
 mt_add <- unique(data.frame(mt$address.noapt,mt$zip.code,
                             stringsAsFactors = FALSE))
-names(mt_add) <- c("address.noapt","zip.code")
+names(mt_add) <- c("address.noapt", "zip.code")
 mt_add <- mt_add[order(mt_add$address.noapt),]
 
 #find duplicate addresses with different zip codes
 dup <- duplicated(mt_add$address.noapt)
 
 # remove them
-dup_add <- mt_add[mt_add$dup,1]
+dup_add <- mt_add[mt_add$dup, 1]
 mt_add <- mt_add[(mt_add$address.noapt != dup_add[1] &
-          mt_add$address.noapt != dup_add[2]),]
+                  mt_add$address.noapt != dup_add[2]), ]
 
 n_add <- dim(mt_add)[1]
 
 # sample 500 addresses so we don't run over our Google Maps API daily limit 
 # (and so we're not waiting forever)
 n_sample <- 500
-add_sample <- mt_add[sample.int(n_add,size=n_sample),]
+add_sample <- mt_add[sample.int(n_add, size = n_sample), ]
+
+# https://github.com/RandallShane/geoPlot/blob/master/R/geoAddress.R
+
+geoAddress <- function(x) {
+  y <- data.frame(t(rep(NA, 4)))
+  y <- y[-1, ]
+  colnames(y) <- c("id", "address", "latitude", "longitude")
+  temp00 <- data.frame(lapply(x[2:6], as.character), stringsAsFactors = FALSE)
+  y[1, 1] <- x[1]
+  temp01 <- paste("http://maps.googleapis.com/maps/api/geocode/xml?address=",
+                  paste(gsub(" ", "+", temp00), collapse = "+"),
+                  "&sensor=false", sep = "", collapse = NULL)
+  y[1, 2] <- paste(temp00, collapse = " ")
+  library(XML)
+  options(warn = (-1))
+  temp02 <- xmlTreeParse(readLines(temp01), getDTD = FALSE)
+  temp03 <- xmlRoot(temp02)
+  temp04 <- temp03[[2]][["geometry"]][["location"]]
+  resp <- xmlSApply(temp03[1][["status"]], xmlValue)
+  if (resp == 'OK') {
+    tmplat  <- xmlSApply(temp04, xmlValue)[1] # latitude
+    tmplong <- xmlSApply(temp04, xmlValue)[2]  # longitude
+  } else { 
+    tmplat <- 0 
+    tmplong <- 0}
+    if(!is.na(unlist(tmplat))){
+      y[1, 3] <- as.double(unlist(tmplat))
+    } else { 
+      lat <- 0 
+    }
+    if(!is.na(unlist(tmplong))) {
+      y[1,4] <- as.double(unlist(tmplong))
+    } else { 
+      long <- 0 
+    }
+  return(y)
+}
+
+# https://github.com/RandallShane/geoPlot/blob/master/R/addrListLookup.R
+addrListLookup <- function(x) {
+  y <- data.frame(t(rep(NA, 4)))
+  colnames(y) <- c("id","address","latitude","longitude")
+  y <- y[-1, ]
+  for (i in 1:nrow(x)) {
+    input <- x[i, ]
+    x[1, ] #
+    geoAddress(x[1, ])#
+    y <- rbind(y, geoAddress(input))
+  }
+  return(y)
+}
+
 
 # first, try a query with the addresses we have
 query_list <- addrListLookup(data.frame(1:n_sample,
-  add_sample$address.noapt,rep("NEW YORK",times=n_sample),
-  rep("NY",times=n_sample),add_sample$zip.code,
-  rep("US",times=n_sample)))[,1:4]
+                                        add_sample$address.noapt,
+                                        rep("NEW YORK", times = n_sample),
+                                        rep("NY", times = n_sample),
+                                        add_sample$zip.code,
+                                        rep("US", times = n_sample)))[ , 1:4]
 
 query_list$matched <- (query_list$latitude != 0)
 
@@ -890,23 +960,30 @@ unmatched_inds <- which(!query_list$matched)
 unmatched <- length(unmatched_inds)
 
 # try changing EAST/WEST to E/W
-query_list[unmatched_inds,1:4] <- addrListLookup
-  (data.frame(1:unmatched,gsub(" WEST "," W ",
-  gsub(" EAST "," E ",add_sample[unmatched_inds,1])),
-  rep("NEW YORK",times=unmatched), rep("NY",times=unmatched),
-      add_sample[unmatched_inds,2],rep("US",times=unmatched)))[ ,1:4]
+query_list[unmatched_inds,1:4] <- 
+  addrListLookup(data.frame(1:unmatched,
+                            gsub(" WEST "," W ", 
+                                 gsub(" EAST "," E ", add_sample[unmatched_inds, 1])),
+                            rep("NEW YORK", times = unmatched), 
+                            rep("NY", times = unmatched),
+                            add_sample[unmatched_inds, 2],
+                            rep("US", times = unmatched)))[ , 1:4]
 
 query_list$matched <- (query_list$latitude != 0)
 unmatched_inds <- which(!query_list$matched)
 unmatched <- length(unmatched_inds)
 
 # try changing STREET/AVENUE to ST/AVE
-query_list[unmatched_inds,1:4] <- addrListLookup
-  (data.frame(1:unmatched,gsub(" WEST "," W ",
-  gsub(" EAST "," E ",gsub(" STREET"," ST",
-  gsub(" AVENUE"," AVE",add_sample[unmatched_inds,1])))),
-  rep("NEW YORK",times=unmatched), rep("NY",times=unmatched),
-      add_sample[unmatched_inds,2],rep("US",times=unmatched)))[ ,1:4]
+query_list[unmatched_inds,1:4] <- 
+  addrListLookup(data.frame(1:unmatched,
+                            gsub(" WEST "," W ", 
+                                 gsub(" EAST "," E ", 
+                                      gsub(" STREET"," ST", 
+                                           gsub(" AVENUE"," AVE", add_sample[unmatched_inds,1])))),
+                            rep("NEW YORK", times = unmatched), 
+                            rep("NY", times = unmatched),
+                            add_sample[unmatched_inds, 2],
+                            rep("US", times = unmatched)))[ , 1:4]
 
 query_list$matched <- (query_list$latitude != 0)
 unmatched_inds <- which(!query_list$matched)
@@ -987,3 +1064,5 @@ For further reading and a more advanced treatment of this material, we recommend
 Rachel attended a workshop in Big Data Mining at Imperial College London in May 2013. One of the speakers, Professor Zoubin Ghahramani from Cambridge University, said that one of his long-term research projects was to build an “automated statistician.” What do you think that means? What do you think would go into building one?
 
 Does the idea scare you? Should it?
+
+[1] http://www.stat.columbia.edu/~gelman/research/published/multi2.pdf
