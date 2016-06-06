@@ -24,7 +24,8 @@ The various contributors for the chapters brought multiple first-hand accounts o
 It’s possible one could do better than we have, so the next sidebar gives you something to think about.
 
 ```
-Thought Experiment: Teaching Data Science
+```
+**Thought Experiment: Teaching Data Science**
 
 How would you design a data science textbook?
 
@@ -35,6 +36,7 @@ How does one measure the success and impact of a data science text? What’s the
 Can we set this up as a data science problem? Even better, can we use a causal modeling approach? This would require finding people who were more or less like you (dear reader) but didn’t buy this book, and then use propensity score matching. Or we could run an experiment and randomly deny people access to the book (hard since Amazon is pretty open access), and you could get to it other ways. But that’s neither here nor there, except it might be better than speculating whether the book made a difference to anyone.
 
 In the industry, they say you can’t learn data science in a university or from a book, that it has to be “on the job.” But maybe that’s wrong, and maybe this book has proved that. You tell us.
+```
 ```
 
 ## What Is Data Science (Again)?
@@ -57,7 +59,7 @@ Data science could be defined simply as what data scientists do, as we did earli
 
 - Get the data themselves
 
-- Build data pipelines (logs→mapreduce→dataset→join with other data→mapreduce→scrape some data→join)
+- Build data pipelines (logs → mapreduce→dataset → join with other data → mapreduce → scrape some data → join)
 
 - Build products instead of describing existing product usage
 
@@ -124,9 +126,11 @@ It’s never too late to emphasize exploratory data analysis as we described in 
 Another caution: many people go straight from a dataset to applying a fancy algorithm. But there’s a huge space of important stuff in between. It’s easy to run a piece of code that predicts or classifies, and to declare victory when the algorithm converges. That’s not the hard part. The hard part is doing it well and making sure the results are correct and interpretable.
 
 ```
-What Would a Next-Gen Data Scientist Do?
+```
+**What Would a Next-Gen Data Scientist Do?**
 
 Next-gen data scientists don’t try to impress with complicated algorithms and models that don’t work. They spend a lot more time trying to get data into shape than anyone cares to admit — maybe up to 90% of their time. Finally, they don’t find religion in tools, methods, or academic departments. They are versatile and interdisciplinary.
+```
 ```
 
 ### Cultivating Soft Skills
@@ -137,14 +141,16 @@ Some habits of mind that we believe might help solve problems [1] are persistenc
 
 Let’s frame this somewhat differently: in education in traditional settings, we focus on answers. But what we probably should focus on, or at least emphasize more strongly, is how students behave when they don’t know the answer. We need to have qualities that help us find the answer.
 
-Speaking of this issue, have you ever wondered why people don’t say “I don’t know” when they don’t know something? This is partly explained through an unconscious bias called the Dunning-Kruger effect.
+Speaking of this issue, have you ever wondered why people don’t say “I don’t know” when they don’t know something? This is partly explained through an unconscious bias called the Dunning-Kruger effect [2].
 
 Basically, people who are bad at something have no idea that they are bad at it and overestimate their confidence. People who are super good at something underestimate their mastery of it. Actual competence may weaken self-confidence. Keep this in mind and try not to over- or underestimate your abilities — give yourself reality checks by making sure you can code what you speak and by chatting with other data scientists about approaches.
 
 ```
-Thought Experiment Revisited: Teaching Data Science
+```
+**Thought Experiment Revisited: Teaching Data Science**
 
 How would you design a data science class around habits of mind rather than technical skills? How would you quantify it? How would you evaluate it? What would students be able to write on their resumes?
+```
 ```
 
 ### Being Question Askers
@@ -162,9 +168,11 @@ Second, get used to asking other people questions. When you approach a problem o
 Finally, there’s a really important issue to keep in mind, namely the classical statistical concept of causation versus correlation. Don’t make the mistake of confusing the two. Which is to say, err on the side of assuming that you’re looking at correlation.
 
 ```
-What Would a Next-Gen Data Scientist Do?
+```
+**What Would a Next-Gen Data Scientist Do?**
 
 Next-gen data scientists remain skeptical — about models themselves, how they can fail, and the way they’re used or can be misused. Next gen data scientists understand the implications and consequences of the models they’re building. They think about the feedback loops and potential gaming of their models.
+```
 ```
 
 ### Being an Ethical Data Scientist
@@ -175,11 +183,11 @@ We now have tons of data on market and human behavior. As data scientists, we br
 
 Keep in mind that the data generated by user behavior becomes the building blocks of data products, which simultaneously are used by users and influence user behavior. We see this in recommendation systems, ranking algorithms, friend suggestions, etc., and we will see it increasingly across sectors including education, finance, retail, and health. Things can go wrong with such feedback loops: keep the financial meltdown in mind as a cautionary example.
 
-Much is made about predicting the future (see Nate Silver), predicting the present (see Hal Varian), and exploring causal relationships from observed data (the past; see Sinan Aral).
+Much is made about predicting the future (see Nate Silver [3]), predicting the present (see Hal Varian [4]), and exploring causal relationships from observed data (the past; see Sinan Aral [?]).
 
 The next logical concept then is: models and algorithms are not only capable of predicting the future, but also of causing the future. That’s what we can look forward to, in the best of cases, and what we should fear in the worst.
 
-As an introduction to how to approach these issues ethically, let’s start with Emanuel Derman’s Hippocratic Oath of Modeling, which was made for financial modeling but fits perfectly into this framework:
+As an introduction to how to approach these issues ethically, let’s start with Emanuel Derman’s Hippocratic Oath of Modeling [5], which was made for financial modeling but fits perfectly into this framework:
 
 - I will remember that I didn’t make the world and that it doesn’t satisfy my equations.
 
@@ -192,45 +200,48 @@ As an introduction to how to approach these issues ethically, let’s start with
 Something that this oath does not take into consideration, but which you might have to as a data scientist, is the politics of working in industry. Even if you are honestly skeptical of your model, there’s always the chance that it will be used the wrong way in spite of your warnings. So the Hippocratic Oath of Modeling is, unfortunately, insufficient in reality (but it’s a good start!).
 
 ```
-What Would a Next-Gen Data Scientist Do?
+```
+**What Would a Next-Gen Data Scientist Do?**
 
 Next-gen data scientists don’t let money blind them to the point that their models are used for unethical purposes. They seek out opportunities to solve problems of social value and they try to consider the consequences of their models.
 ```
+```
 
-Finally, there are ways to do good: volunteer to work on a long-term project (more than a hackathon weekend) with DataKind.
+Finally, there are ways to do good: volunteer to work on a long-term project (more than a hackathon weekend) with DataKind [6].
 
-There are also ways to be transparent: Victoria Stodden is working on RunMyCode, which is all about making research open source and replicable.
+There are also ways to be transparent: Victoria Stodden is working on RunMyCode [7], which is all about making research open source and replicable.
 
 We want step aside for a moment and let someone else highlight how important we think ethics — and vanquishing hubris — are to data science. Professor Matthew Jones, from Columbia’s History Department, attended the course. He is an expert in the history of science, and he wrote up some of his thoughts based on the course. We’ve included them here as some very chewy food for thought.
 
 ```
-Data & Hubris
+```
+**Data & Hubris**
 
-In the wake of the 2012 presidential election, data people, those they love, and especially those who idealize them, exploded in schadenfreude about the many errors of the traditional punditocracy. Computational statistics and data analysis had vanquished prognostication based on older forms of intuition, gut instinct, long-term journalistic experience, and the decadent web of Washington insiders. The apparent success of the Obama team and others using quantitative prediction revealed that a new age in political analysis has been cemented. Older forms of “expertise,” now with scare quotes, were invited to take a long overdue retirement and to permit a new data- driven political analysis to emerge.
+In the wake of the 2012 presidential election, data people, those they love, and especially those who idealize them, exploded in schadenfreude about the many errors of the traditional punditocracy. Computational statistics and data analysis had vanquished prognostication based on older forms of intuition, gut instinct, long-term journalistic experience, and the decadent web of Washington insiders. The apparent success [8] of the Obama team and others using quantitative prediction [?] revealed that a new age in political analysis has been cemented. Older forms of “expertise,” now with scare quotes, were invited to take a long overdue retirement and to permit a new data- driven political analysis to emerge.
 
 It’s a compelling tale, with an easy and attractive bifurcation of old and new forms of knowledge. Yet good data scientists have been far more reflective about the dangers of throwing away existing domain knowledge and its experts entirely.
 
-Origin stories add legitimacy to hierarchies of expertise. Data mining has long had a popular, albeit somewhat apocryphal, origin story: the surprising discovery, using an association algorithm, that men who buy diapers tend often to buy beer at the same time in drug stores. Traditional marketing people, with their quant folk psychologies and intuitions about business, were heretofore to be vanquished before what the press probably still called an “electronic brain.” The story follows a classic template. Probability and statistics from their origins in the European Enlightenment have long challenged traditional forms of expertise: the pricing of insurance and annuities using data rather than reflection of character of the applicant entailed the diminution and disappearance of older experts. In the book that introduced the much beloved (or dreaded) epsilons and deltas into real analysis, the great mathematician Augustin-Louis Cauchy blamed statisticians for the French Revolution: “Let us cultivate the mathematical sciences with ardor, without wanting to extend them beyond their domain; and let us not imagine that one can attack history with formulas, nor give sanction to morality through theories of algebra or the integral calculus.”
+Origin stories add legitimacy to hierarchies of expertise. Data mining has long had a popular, albeit somewhat apocryphal, origin story: the surprising discovery, using an association algorithm [9], that men who buy diapers tend often to buy beer at the same time in drug stores [10]. Traditional marketing people, with their quant folk psychologies and intuitions about business, were heretofore to be vanquished before what the press probably still called an “electronic brain.” The story follows a classic template. Probability and statistics from their origins [11] in the European Enlightenment have long challenged traditional forms of expertise: the pricing of insurance and annuities using data rather than reflection of character of the applicant entailed the diminution and disappearance of older experts. In the book [12] that introduced the much beloved (or dreaded) epsilons and deltas into real analysis, the great mathematician Augustin-Louis Cauchy blamed statisticians for the French Revolution: “Let us cultivate the mathematical sciences with ardor, without wanting to extend them beyond their domain; and let us not imagine that one can attack history with formulas, nor give sanction to morality through theories of algebra or the integral calculus.”
 
 These narratives fit nicely into the celebration of disruption so central to Silicon Valley libertarianism, Schumpeterian capitalism, and certain variants of tech journalism. However powerful in extirpating rent-seeking forms of political analysis and other disciplines, the dichotomy mistakes utterly the real skills and knowledge that appear often to give the data sciences the traction they have. The preceding chapters — dedicated to the means for cultivating the diverse capacities of the data scientist — make mincemeat of any facile dichotomy of the data expert and the traditional expert. Doing data science has put a tempering of hubris, especially algorithmic hubris, at the center of its technical training.
 
-Obama’s data team explained that much of their success came from taking the dangers of hubris rather seriously, indeed, in building a technical system premised on avoiding the dangers of overestimation, from the choice and turning of algorithms to the redundancy of the backend and network systems: “I think the Republicans f**ked up in the hubris department,” Harper Reed explained to Atlantic writer Alexis Madrigal. “I know we had the best technology team I’ve ever worked with, but we didn’t know if it would work. I was incredibly confident it would work. I was betting a lot on it. We had time. We had resources. We had done what we thought would work, and it still could have broken. Something could have happened.”
+Obama’s data team explained [13] that much of their success came from taking the dangers of hubris rather seriously, indeed, in building a technical system premised on avoiding the dangers of overestimation, from the choice and turning of algorithms to the redundancy of the backend and network systems: “I think the Republicans f**ked up in the hubris department,” Harper Reed explained to Atlantic writer Alexis Madrigal. “I know we had the best technology team I’ve ever worked with, but we didn’t know if it would work. I was incredibly confident it would work. I was betting a lot on it. We had time. We had resources. We had done what we thought would work, and it still could have broken. Something could have happened.”
 
-Debate over the value of “domain knowledge” has long polarized the data community. Much of the promise of unsupervised learning, after all, is overcoming a crippling dependence on our wonted categories of social and scientific analysis, as seen in one of many celebrations of the Obama analytics team. Daniel Wagner, the 29-year-old chief analytics officer, said:
+Debate over the value of “domain knowledge” has long polarized the data community. Much of the promise of unsupervised learning, after all, is overcoming a crippling dependence on our wonted categories of social and scientific analysis, as seen in one of many celebrations [14] of the Obama analytics team. Daniel Wagner, the 29-year-old chief analytics officer, said:
 
-The notion of a campaign looking for groups such as “soccer moms” or “waitress moms” to convert is outdated. Campaigns can now pinpoint individual swing voters. White suburban women? They’re not all the same. The Latino community is very diverse with very different interests. What the data permits you to do is to figure out that diversity.
+*The notion of a campaign looking for groups such as “soccer moms” or “waitress moms” to convert is outdated. Campaigns can now pinpoint individual swing voters. White suburban women? They’re not all the same. The Latino community is very diverse with very different interests. What the data permits you to do is to figure out that diversity.*
 
 In productive tension with this escape from deadening classifications, however, the movement to revalidate domain expertise within statistics seems about as old as formalized data mining.
 
-In a now infamous Wall Street Journal article, Peggy Noonan mocked the job ad for the Obama analytics department: “It read like politics as done by Martians.” The campaign was simply insufficiently human, with its war room both “high-tech and bloodless.” Unmentioned went that the contemporaneous Romney ads read similarly.
+In a now infamous Wall Street Journal article [15], Peggy Noonan mocked the job ad for the Obama analytics department: “It read like politics as done by Martians.” The campaign was simply insufficiently human, with its war room both “high-tech and bloodless.” Unmentioned went that the contemporaneous Romney ads read similarly.
 
-Data science rests on algorithms but does not reduce to those algorithms. The use of those algorithms rests fundamentally on what sociologists of science call “tacit knowledge” — practical knowledge not easily reducible to articulated rules, or perhaps impossible to reduce to rules at all. Using algorithms well is fundamentally a very human endeavor — something not particularly algorithmic.
+Data science rests on algorithms but does not reduce to those algorithms. The use of those algorithms rests fundamentally on what sociologists of science call “tacit knowledge” [16] — practical knowledge not easily reducible to articulated rules, or perhaps impossible to reduce to rules at all. Using algorithms well is fundamentally a very human endeavor — something not particularly algorithmic.
 
 No warning to young data padawans is as central as the many dangers of overfitting, the taking of noise for signal in a given training set; or, alternatively, learning too much from a training set to generalize properly. Avoiding overfitting requires a reflective use of algorithms. Algorithms are enabling tools requiring us to reflect more, not less. In 1997 Peter Huber explained, “The problem, as I see it, is not one of replacing human ingenuity by machine intelligence, but one of assisting human ingenuity by all conceivable tools of computer science and artificial intelligence, in particular aiding with the improvisation of search tools and with keeping track of the progress of an analysis.”̄ The word ‘improvisation’ is just right in pointing to mastery of tools, contextual reasoning, and the virtue of avoiding rote activity.
 
 The hubris one might have when using an algorithm must be tempered through a profound familiarity with that algorithm and its particular instantiation.
 
-Reflection upon the splendors and miseries of existing models figured prominently in the Obama campaign’s job ad mocked by Noonan:
+Reflection upon the splendors and miseries of existing models figured prominently in the Obama campaign’s job ad [17] mocked by Noonan:
 
 - Develop and build statistical/predictive/machine learning models to assist in field, digital media, paid media and fundraising operations
 
@@ -245,6 +256,7 @@ How to learn to improvise? In other words, what model would be best for educatin
 For centuries, an art, such as mathematics or music, was called “liberal” just because it wasn’t automatic, mechanical, purely repetitive, habitual. A liberal arts education is one for free people, in the sense of people mentally free to reflect upon their tools, actions, and customs, people not controlled by those tools, people free, then, to use or not to use their tools. The point holds for algorithms as much as literature — regurgitation need not apply in the creation of a data scientist worth the name. Neither should any determinism about technology. No data scientist need ever confuse the possibility of using a technology with the necessity of using it. In the sparse space of the infinite things one might do with data, only a few dense (and interesting) ethical pockets deserve our energy.
 
 — Matthew Jones
+```
 ```
 
 ### Career Advice
@@ -272,3 +284,35 @@ On the one hand, remember that whatever you decide to do is not permanent, so do
 Finally, if you feel your way of thinking or perspective is somehow different than what those around you are thinking, then embrace and explore that; you might be onto something.
 
 [1] Taken from the book *Learning and Leading with Habits of Mind*, edited by Arthur L. Costa and Bena Kallick (ACSD).
+
+[2] https://en.wikipedia.org/wiki/Dunning–Kruger_effect
+
+[3] http://www.slate.com/articles/business/books/2012/10/nate_silver_s_book_the_signal_and_the_noise_reviewed_.html
+
+[4] https://research.googleblog.com/2009/04/predicting-present-with-google-trends.html
+
+[5] https://mathbabe.org/2011/10/27/is-big-data-evil/
+
+[6] http://www.datakind.org
+
+[7] http://www.runmycode.org/home/?/CompanionSite/
+
+[8] http://swampland.time.com/2012/11/07/inside-the-secret-world-of-quants-and-data-crunchers-who-helped-obama-win/
+
+[9] https://en.wikipedia.org/wiki/Association_rule_learning
+
+[10] http://www.itbusiness.ca/news/behind-the-beer-and-diapers-data-mining-legend/136
+
+[11] http://press.princeton.edu/titles/4295.html
+
+[12] http://visualiseur.bnf.fr/Visualiseur?Destination=Gallica&O=NUMM-29058
+
+[13] http://www.theatlantic.com/technology/archive/2012/11/when-the-nerds-go-marching-in/265325/
+
+[14] http://articles.latimes.com/print/2012/nov/13/nation/la-na-obama-analytics-20121113
+
+[15] http://www.wsj.com/articles/SB10001424053111904800304576474620336602248
+
+[16] http://www.amazon.com/Tacit-Explicit-Knowledge-Harry-Collins/dp/0226113809
+
+[17] http://www.kdnuggets.com/jobs/11/07-13-obama2012-predictive-modeling-data-mining-scientists-analysts.html
