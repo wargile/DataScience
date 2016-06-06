@@ -409,6 +409,7 @@ The raw data is on a per-user basis, from 2007 to 2012, and only shows ratings a
 
 Here’s some R code to look at the first 10 rows in R:
 
+```{r, comment=NA}
 #
 # author: Jared Lander #
 require(rjson) 
@@ -429,6 +430,7 @@ str(theLines)
 theRead <- lapply(theLines[-1], fromJSON) # turn it all into a data.frame
 theData <- ldply(theRead, as.data.frame) # see how we did
 View(theData) 
+```
 
 Start with these steps:
 
