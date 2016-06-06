@@ -50,17 +50,44 @@ length(txt)
 
 ```{r comment=NA}
 strsplit(txt[4], ";")[[1]]
+```
+
+```{r comment=NA}
+unlist(lapply(strsplit(txt[4], ";")[[1]],
+              function(x)
+                sapply(strsplit(x, "=")[[1]], strsplit, ",")))
+```
+
+```{r comment=NA}
 tokens <- strsplit(txt[4], "[;=,]")[[1]]
+```
+
+```{r comment=NA}
 tokens[1:10]
+```
+
+```{r comment=NA}
 tokens[c(2, 4, 6:8, 10)]
+```
+
+```{r comment=NA}
 tokens[-(1:10)]
+```
+
+```{r comment=NA}
 tmp <- matrix(tokens[-(1:10)], ncol = 4, byrow = TRUE)
 mat <- cbind(matrix(tokens[c(2, 4, 6:8, 10)], 
                     nrow = nrow(tmp),
                     ncol = 6, 
                     byrow = TRUE), 
              tmp)
+```
+
+```{r comment=NA}
 dim(mat)
+```
+
+```{r comment=NA}
 processLine <- function(x) {
   tokens <- strsplit(x, "[;=,]")[[1]]
   tmp <- matrix(tokens[-(1:10)], ncol = 4, byrow = TRUE)
@@ -70,12 +97,35 @@ processLine <- function(x) {
                byrow = TRUE), 
         tmp)
 }
+```
+
+```{r comment=NA}
 tmp <- lapply(txt[4:20], processLine)
+```
+
+```{r comment=NA}
 sapply(tmp, nrow)
+```
+
+```{r comment=NA}
 offline <- as.data.frame(do.call("rbind", tmp))
 dim(offline)
+```
+
+```{r comment=NA}
 lines <- txt[ substr(txt, 1, 1) != "#" ]
 tmp <- lapply(lines, processLine)
+```
+
+```{r comment=NA}
+options(error = recover, warn = 2)
+```
+
+```{r comment=NA}
+tmp <- lapply(lines, processLine)
+```
+
+```{r comment=NA}
 processLine <- function(x) {
   tokens <- strsplit(x, "[;=,]")[[1]]
   if (length(tokens) == 10) 
@@ -87,9 +137,15 @@ processLine <- function(x) {
                byrow = TRUE), 
         tmp)
 }
+```
+
+```{r comment=NA}
 options(error = recover, warn = 1)
 tmp <- lapply(lines, processLine)
 offline <- as.data.frame(do.call("rbind", tmp), stringsAsFactors = FALSE)
+```
+
+```{r comment=NA}
 dim(offline)
 ```
 
@@ -98,17 +154,38 @@ dim(offline)
 ```{r comment=NA}
 names(offline) <- c("time", "scanMac", "posX", "posY", "posZ", 
                     "orientation", "mac", "signal", "channel", "type")
+```
+
+```{r comment=NA}
 numVars <- c("time", "posX", "posY", "posZ", "orientation", "signal")
 offline[numVars] <-  lapply(offline[numVars ], as.numeric)
+```
+
+```{r comment=NA}
 offline <- offline[offline$type == "3", ]
 offline <- offline[ , "type" != names(offline) ]
 dim(offline)
+```
+
+```{r comment=NA}
 offline$rawTime <- offline$time
 offline$time <- offline$time/1000
 class(offline$time) <- c("POSIXt", "POSIXct")
+```
+
+```{r comment=NA}
 unlist(lapply(offline, class))
+```
+
+```{r comment=NA}
 summary(offline[, numVars])
+```
+
+```{r comment=NA}
 summary(sapply(offline[ , c("mac", "channel", "scanMac")], as.factor))
+```
+
+```{r comment=NA}
 offline <- offline[ , !(names(offline) %in% c("scanMac", "posZ"))]
 ```
 
@@ -116,7 +193,13 @@ offline <- offline[ , !(names(offline) %in% c("scanMac", "posZ"))]
 
 ```{r comment=NA}
 length(unique(offline$orientation))
+```
+
+```{r comment=NA}
 plot(ecdf(offline$orientation))
+```
+
+```{r comment=NA}
 #pdf(file = "Geo_ECDFOrientation.pdf", width = 10, height = 7)
 oldPar <- par(mar = c(4, 4, 1, 1))
 plot(ecdf(offline$orientation), pch = 19, cex = 0.3,
@@ -137,17 +220,18 @@ oldPar = par(mar = c(4, 4, 1, 1))
 plot(density(offline$orientation, bw = 2),  xlab = "orientation", main = "")
 par(oldPar)
 #dev.off()
+```
 
+```{r comment=NA}
 roundOrientation <- function(angles) {
   refs <- seq(0, by = 45, length  = 9)
   q <- sapply(angles, function(o) which.min(abs(o - refs)))
   c(refs[1:8], 0)[q]
 }
-offline$angle <- roundOrientation(offline$orientation)
 ```
 
 ```{r comment=NA}
-
+offline$angle <- roundOrientation(offline$orientation)
 ```
 
 ```{r comment=NA}
@@ -242,7 +326,7 @@ Figure 1.5: Counts of signals detected at each position. Plotted at each locatio
 ```{r comment=NA}
 
 ```
-Figure 1.6: Signal Stenght by Angle for Each Access Point. The boxplots in this figure represent signals for one location, which is in the uper left corner of the floor plan, i.e., x = 2 and y = 12. These boxes are organized by access point and the angle of the hand-held device. The dependence of signal strength on angle is evident at serveral of the access points, e.g., 00:14:bf:97:90 in the top right panel of the figure.
+Figure 1.6: Signal Strength by Angle for Each Access Point. The boxplots in this figure represent signals for one location, which is in the uper left corner of the floor plan, i.e., x = 2 and y = 12. These boxes are organized by access point and the angle of the hand-held device. The dependence of signal strength on angle is evident at serveral of the access points, e.g., 00:14:bf:97:90 in the top right panel of the figure.
 
 ```{r comment=NA}
 
