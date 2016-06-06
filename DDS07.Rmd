@@ -378,6 +378,7 @@ This is an example of an embedded feature selection algorithm. (Why embedded?) Y
 
 Suppose you have your Chasing Dragons dataset. Your outcome variable is Return: a binary variable that captures whether or not the user returns next month, and you have tons of predictors. You can use the R library rpart and the function rpart, and the code would look like this:
 
+```{r, comment=NA}
     # Classification Tree with rpart
     library(rpart)
 # grow tree
@@ -389,7 +390,8 @@ plotcp(model1) # visualize cross-validation results summary(model1) # detailed s
 # plot tree
 plot(model1, uniform=TRUE,
 main="Classification Tree for Chasing Dragons")
-text(model1, use.n=TRUE, all=TRUE, cex=.8) 
+text(model1, use.n=TRUE, all=TRUE, cex = 0.8) 
+```
 
 ### Handling Continuous Variables in Decision Trees
 
@@ -419,6 +421,7 @@ Note that you could decide beforehand how deep the tree should get, or you could
 
 The code for this would look like:
 
+```{r, comment=NA}
 # Author: Jared Lander
 #
 # we will be using the diamonds data from ggplot require(ggplot2)
@@ -473,6 +476,7 @@ summary(modglmBoost)
 require(randomForest)
 system.time(modForest <- randomForest(Species ~ ., data=iris,
 importance=TRUE, proximity=TRUE))
+```
 
 Criticisms of Feature Selection
 
