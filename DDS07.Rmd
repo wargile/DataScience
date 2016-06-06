@@ -5,7 +5,13 @@ date: "June 4, 2016"
 output: html_document
 ---
 
+```{r, comment=NA}
 
+```
+
+*Doing Data Science*
+
+by Rachel Schutt and Cathy O’Neil
 
 # CHAPTER 7 Extracting Meaning from Data
 
@@ -13,7 +19,7 @@ How do companies extract meaning from the data they have?
 
 In this chapter we hear from two people with very different approaches to that question — namely, William Cukierski from Kaggle and David Huffaker from Google.
 
-William Cukierski
+## William Cukierski
 
 Will went to Cornell for a BA in physics and to Rutgers to get his PhD in biomedical engineering. He focused on cancer research, studying pathology images. While working on writing his dissertation, he got more and more involved in Kaggle competitions (more about Kaggle in a bit), finishing very near the top in multiple competitions, and now works for Kaggle.
 
@@ -21,7 +27,7 @@ After giving us some background in data science competitions and crowdsourcing, 
 
 Will will then focus on feature extraction and feature selection. Quickly, feature extraction refers to taking the raw dump of data you have and curating it more carefully, to avoid the “garbage in, garbage out” scenario you get if you just feed raw data into an algorithm without enough forethought. Feature selection is the process of constructing a subset of the data or functions of the data to be the predictors or variables for your models and algorithms.
 
-Background: Data Science Competitions
+### Background: Data Science Competitions
 
 There is a history in the machine learning community of data science competitions — where individuals or teams compete over a period of several weeks or months to design a prediction algorithm. What it predicts depends on the particular dataset, but some examples include whether or not a given person will get in a car crash, or like a particular film. A training set is provided, an evaluation metric determined up front, and some set of rules is provided about, for example, how often competitors can submit their predictions, whether or not teams can merge into larger teams, and so on.
 
@@ -37,7 +43,7 @@ Data Science Competitions Cut Out All the Messy Stuff
 
 Competitions might be seen as formulaic, dry, and synthetic compared to what you’ve encountered in normal life. Competitions cut out the messy stuff before you start building models — asking good questions, collecting and cleaning the data, etc. — as well as what happens once you have your model, including visualization and communication. The team of Kaggle data scientists actually spends a lot of time creating the dataset and evaluation metrics, and figuring out what questions to ask, so the question is: while they’re doing data science, are the contestants?
 
-Background: Crowdsourcing
+### Background: Crowdsourcing
 
 There are two kinds of crowdsourcing models. First, we have the distributive crowdsourcing model, like Wikipedia, which is for relatively simplistic but large-scale contributions. On Wikipedia, the online encyclopedia, anyone in the world can contribute to the content, and there is a system of regulation and quality control set up by volunteers. The net effect is a fairly high-quality compendium of all of human knowledge (more or less).
 
@@ -67,7 +73,7 @@ Amazon Mechanical Turk is an online crowdsourcing service where humans are given
 
 Mechanical Turk is an example of artificial artificial intelligence (yes, double up on the “artificial”), in that the humans are helping the machines helping the humans.
 
-The Kaggle Model
+## The Kaggle Model
 
 Being a data scientist is when you learn more and more about more and more, until you know nothing about everything. — Will Cukierski
 
@@ -75,7 +81,7 @@ Kaggle is a company whose tagline is, “We’re making data science a sport.”
 
 They also have in house a bunch of top-notch data scientists, including Will himself. The companies are their paying customers, and they provide datasets and data problems that they want solved. Kaggle crowdsources these problems with data scientists around the world. Anyone can enter. Let’s first describe the Kaggle experience for a data scientist and then discuss the customers.
 
-A Single Contestant
+### A Single Contestant
 
 In Kaggle competitions, you are given a training set, and also a test set where the y values are hidden, but the x values are given, so you just use your model to get your predicted x values for the test set and upload them into the Kaggle system to see your evaluation score. This way you don’t share your actual code with Kaggle unless you win the prize (and Kaggle doesn’t have to worry about which version of Python you’re running). Note that even giving out just the xs is real information — in particular it tells you, for example, what sizes of xs your algorithm should optimize for. Also for the purposes of the competition, there is a third hold-out set that contestants never have access to. You don’t see the xs or the ys — that is used to determine the competition winner when the competition closes.
 
@@ -85,7 +91,7 @@ Figure 7-1. Chris Mulligan, a student in Rachel’s class, created this leapfrog
 
 This leapfrogging effect is good and bad. It encourages people to squeeze out better performing models, possibly at the risk of overfitting, but it also tends to make models much more complicated as they get better. One reason you don’t want competitions lasting too long is that, after a while, the only way to inch up performance is to make things ridiculously complicated. For example, the original Netflix Prize lasted two years and the final winning model was too complicated for them to actually put into production.
 
-Their Customers
+### Their Customers
 
 So why would companies pay to work with Kaggle? The hole that Kaggle is filling is the following: there’s a mismatch between those who need analysis and those with skills. Even though companies desperately need analysis, they tend to hoard data; this is the biggest obstacle for success for those companies that even host a Kaggle competition. Many companies don’t host competitions at all, for similar reasons. Kaggle’s innovation is that it convinces businesses to share proprietary data with the benefit that their large data problems will be solved for them by crowdsourcing Kaggle’s tens of thousands of data scientists around the world.
 
@@ -120,7 +126,7 @@ Resolved score between the raters
 A unique identifier for each individual student essay set
 An id for each set of essays
 
-Thought Experiment: What Are the Ethical Implications of a Robo-Grader?
+## Thought Experiment: What Are the Ethical Implications of a Robo-Grader?
 
 Will asked students to consider whether they would want their essays automatically graded by an underlying computer algorithm, and what the ethical implications of automated grading would be. Here are some of their thoughts.
 
@@ -156,7 +162,7 @@ PA: Can you see any downsides to the data-driven, black-box approach that domina
 
 JH: Some people take the view that you don’t end up with a richer understanding of the problem. But that’s just not true: The algorithms tell you what’s important and what’s not. You might ask why those things are important, but I think that’s less interesting. You end up with a predictive model that works. There’s not too much to argue about there.
 
-Feature Selection
+## Feature Selection
 
 The idea of feature selection is identifying the subset of data or transformed data that you want to put into your model.
 
@@ -178,7 +184,7 @@ Why? We are getting bigger and bigger datasets, but that’s not always helpful.
 
 To improve the performance of your predictive models, you want to improve your feature selection process.
 
-Example: User Retention
+### Example: User Retention
 
 Let’s give an example for you to keep in mind before we dig into some possible methods. Suppose you have an app that you designed, let’s call it Chasing Dragons (shown in Figure 7-2), and users pay a monthly subscription fee to use it. The more users you have, the more money you make. Suppose you realize that only 10% of new users ever come back after the first month. So you have two options to increase your revenue: find a way to increase the retention rate of existing users, or acquire new users. Generally it costs less to keep an existing customer around than to market and advertise to new users. But setting aside that particular cost-benefit analysis of acquisition or retention, let’s choose to focus on your user retention situation by building a model that predicts whether or not a new user will come back next month based on their behavior this month. You could build such a model in order to understand your retention situation, but let’s focus instead on building an algorithm that is highly accurate at predicting. You might want to use this model to give a free month to users who you predict need the extra incentive to stick around, for example.
 
@@ -244,7 +250,7 @@ So what should you do? Throw all the hundreds of features you created into one b
 
 Will found this famous paper by Isabelle Guyon published in 2003 entitled “An Introduction to Variable and Feature Selection” to be a useful resource. The paper focuses mainly on constructing and selecting subsets of features that are useful to build a good predictor. This contrasts with the problem of finding or ranking all potentially relevant variables. In it she studies three categories of feature selection methods: filters, wrappers, and embedded methods. Keep the Chasing Dragons prediction example in mind as you read on.
 
-Filters
+### Filters
 
 Filters order possible features with respect to a ranking based on a metric or statistic, such as correlation with the outcome variable. This is sometimes good on a first pass over the space of features, because they then take account of the predictive power of individual features. However, the problem with filters is that you get correlated features. In other words, the filter doesn’t care about redundancy. And by treating the features as independent, you’re not taking into account possible interactions.
 
@@ -252,7 +258,7 @@ This isn’t always bad and it isn’t always good, as Isabelle Guyon explains. 
 
 Here’s an example of a filter: for each feature, run a linear regression with only that feature as a predictor. Each time, note either the p-value or R-squared, and rank order according to the lowest p-value or highest R-squared (more on these two in “Selection criterion” on page 182).
 
-Wrappers
+### Wrappers
 
 Wrapper feature selection tries to find subsets of features, of some fixed size, that will do the trick. However, as anyone who has studied combinations and permutations knows, the number of possible size k subsets of n things, called  nk  , grows exponentially. So there’s a nasty opportunity for overfitting by doing this.
 
@@ -308,7 +314,7 @@ You don’t have to retrain models at each step of these approaches, because the
 
 One last word: if you have a domain expert on hand, don’t go into the machine learning rabbit hole of feature selection unless you’ve tapped into your expert completely!
 
-Embedded Methods: Decision Trees
+### Embedded Methods: Decision Trees
 
 Decision trees have an intuitive appeal because outside the context of data science in our every day lives, we can think of breaking big decisions down into a series of questions. See the decision tree in Figure 7-3 about a college student facing the very important decision of how to spend their time.
 
@@ -326,7 +332,7 @@ But you want this tree to be based on data and not just what you feel like. Choo
 
 For the sake of this discussion, assume we break compound questions into multiple yes-or-no questions, and we denote the answers by “0” or “1.” Given a random variable X, we denote by p X = 1  and p X = 0 the probability that X is true or false, respectively.
 
-Entropy
+### Entropy
 
 To quantify what is the most “informative” feature, we define entropy–effectively a measure for how mixed up something is — for X as follows:
 
@@ -362,7 +368,7 @@ In words, the conditional entropy asks: how mixed is our bag really if we know t
 
 Going back to how we use the concept of entropy to build decision trees: it helps us decide what feature to split our tree on, or in other words, what’s the most informative question to ask?
 
-The Decision Tree Algorithm
+### The Decision Tree Algorithm
 
 You build your decision tree iteratively, starting at the root. You need an algorithm to decide which attribute to split on; e.g., which node should be the next one to identify. You choose that attribute in order to maximize information gain, because you’re getting the most bang for your buck that way. You keep going until all the points at the end are in the same class or you end up with no features left. In this case, you take the majority vote.
 
@@ -385,7 +391,7 @@ plot(model1, uniform=TRUE,
 main="Classification Tree for Chasing Dragons")
 text(model1, use.n=TRUE, all=TRUE, cex=.8) 
 
-Handling Continuous Variables in Decision Trees
+### Handling Continuous Variables in Decision Trees
 
 Packages that already implement decision trees can handle continuous variables for you. So you can provide continuous features, and it will determine an optimal threshold for turning the continuous variable into a binary predictor. But if you are building a decision tree algorithm yourself, then in the case of continuous variables, you need to determine the correct threshold of a value so that it can be thought of as a binary variable. So you could partition a user’s number of dragon slays into “less than 10” and “at least 10,” and you’d be getting back to the binary variable case. In this case, it takes some extra work to decide on the information gain because it depends on the threshold as well as the feature.
 
@@ -397,7 +403,7 @@ For fun, Will pointed us to this decision tree for surviving on the Titanic on t
 
 Figure 7-6. Surviving the Titanic
 
-Random Forests
+### Random Forests
 
 Let’s turn to another algorithm for feature selection. Random forests generalize decision trees with bagging, otherwise known as bootstrap aggregating. We will explain bagging in more detail later, but the effect of using it is to make your models more accurate and more robust, but at the cost of interpretability — random forests are notoriously difficult to understand. They’re conversely easy to specify, with two hyperparameters: you just need to specify the number of trees you want in your forest, say N, as well as the number of features to randomly select for each tree, say F.
 
@@ -474,7 +480,7 @@ Let’s address a common criticism of feature selection. Namely, it’s no bette
 
 There’s a well-known bias-variance tradeoff: a model is “high bias” if it’s is too simple (the features aren’t encoding enough information). In this case, lots more data doesn’t improve our model. On the other hand, if our model is too complicated, then “high variance” leads to overfitting. In this case we want to reduce the number of features we are using.
 
-User Retention: Interpretability Versus Predictive Power
+### User Retention: Interpretability Versus Predictive Power
 
 So let’s say you built the decision tree, and that it predicts quite well. But should you interpret it? Can you try to find meaning in it?
 
@@ -482,7 +488,7 @@ It could be that it basically tells you “the more the user plays in the first 
 
 It’s also worth noting that features that have to do with the user’s behavior (user played 10 times this month) are qualitatively different than features that have to do with your behavior (you showed 10 ads, and you changed the dragon to be red instead of green). There’s a causation/correlation issue here. If there’s a correlation of getting a high number of points in the first month with returning to play next month, does that mean if you just give users a high number of points this month without them playing at all, they’ll come back? No! It’s not the number of points that caused them to come back, it’s that they’re really into playing the game (a confounding factor), which correlates with both their coming back and their getting a high number of points. You therefore would want to do feature selection with all variables, but then focus on the ones you can do something about (e.g., show fewer ads) conditional on user attributes.
 
-David Huffaker: Google’s Hybrid Approach to Social Research
+## David Huffaker: Google’s Hybrid Approach to Social Research
 
 David’s focus is on the effective marriages of both qualitative and quantitative research, and of big and little data. Large amounts of big quantitative data can be more effectively extracted if you take the time to think on a small scale carefully first, and then leverage what you learned on the small scale to the larger scale. And vice versa, you might find patterns in the large dataset that you want to investigate by digging in deeper by doing intensive usability studies with a handful of people, to add more color to the phenomenon you are seeing, or verify interpretations by connecting your exploratory data analysis on the large dataset with relevant academic literature.
 
@@ -490,7 +496,7 @@ David was one of Rachel’s colleagues at Google. They had a successful collabor
 
 Google does a good job of putting people together. They blur the lines between research and development. They even wrote about it in this July 2012 position paper: Google’s Hybrid Approach to Research. Their researchers are embedded on product teams. The work is iterative, and the engineers on the team strive to have near-production code from day 1 of a project. They leverage engineering infrastructure to deploy experiments to their mass user base and to rapidly deploy a prototype at scale. Considering the scale of Google’s user base, redesign as they scale up is not a viable option. They instead do experiments with smaller groups of users.
 
-Moving from Descriptive to Predictive
+### Moving from Descriptive to Predictive
 
 David suggested that as data scientists, we consider how to move into an experimental design so as to move to a causal claim between variables rather than a descriptive relationship. In other words, our goal is to move from the descriptive to the predictive.
 
@@ -522,7 +528,7 @@ Other examples of networks:
 
 • Nodes are theorems, directed edges are dependencies
 
-Social at Google
+### Social at Google
 
 As you may have noticed, “social” is a layer across all of Google. Search now incorporates this layer: if you search for something you might see that your friend “+1”ed it. This is called a social annotation. It turns out that people care more about annotation when it comes from someone with domain expertise rather than someone you’re very close to. So you might care more about the opinion of a wine expert at work than the opinion of your mom when it comes to purchasing wine.
 
@@ -530,7 +536,7 @@ Note that sounds obvious but if you started the other way around, asking who you
 
 In general you need to always keep in mind a quantitative metric of success. This defines success for you, so you have to be careful.
 
-Privacy
+### Privacy
 
 Human-facing technology has thorny issues of privacy, which makes stuff hard. Google conducted a survey of how people felt uneasy about content. They asked, how does it affect your engagement? What is the nature of your privacy concerns?
 
@@ -553,7 +559,7 @@ Physical world
 • Stalkers
 • Employment risks
 
-Thought Experiment: What Is the Best Way to Decrease Concern and Increase Understanding and Control?
+### Thought Experiment: What Is the Best Way to Decrease Concern and Increase Understanding and Control?
 
 So given users’ understandable concerns about privacy, students in Rachel’s class brainstormed some potential solutions that Google could implement (or that anyone dealing with user-level data could consider).
 
