@@ -29,12 +29,20 @@ by Deborah Nolan and Duncan Temple Lang
 
 ## 1.2 The Raw Data
 
+Figure 1.1: Floor Plan of the Test Environment. In this floor plan, the 6 fixed access points are denoted by black square markers, the offline/training data were collected at the locations marked by grey dots, and the online measurements were recorded at randomly selected points indicated with black dots. The grey dots are spaced one meter apart.
+
 ```{r comment=NA}
 options(digits = 2)
 setwd("~/GitHub/DataScience")
 #txt = readLines("Data/offline.final.trace.txt")
 txt <- readLines("offline.final.trace.txt")
+```
+
+```{r comment=NA}
 sum(substr(txt, 1, 1) == "#")
+```
+
+```{r comment=NA}
 length(txt)
 ```
 
