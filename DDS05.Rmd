@@ -56,11 +56,11 @@ This process, whereby one formulates a well-defined hypothesis and then tests it
 
 This section focuses on the process of choosing a classifier. Classification involves mapping your data points into a finite set of labels or the probability of a given label or labels. We’ve already seen some examples of classification algorithms, such as Naive Bayes and k-nearest neighbors (k-NN), in the previous chapters. Table 5-1 shows a few examples of when you’d want to use classification:
 
-Table 5-1. Classifier example questions and answers
-“Will someone click on this ad?” 0 or 1 (no or yes) 
-“What number is this (image recognition)?” 0, 1, 2, etc. 
-“What is this news article about?” “Sports”
-“Is this spam?” 0 or 1
+Table 5-1. Classifier example questions and answers  
+“Will someone click on this ad?” 0 or 1 (no or yes)  
+“What number is this (image recognition)?” 0, 1, 2, etc.  
+“What is this news article about?” “Sports”  
+“Is this spam?” 0 or 1  
 “Is this pill good for headaches?” 0 or 1
 
 From now on we’ll talk about binary classification only (0 or 1).
@@ -130,7 +130,7 @@ Brian and his team have three core problems as data scientists at M6D:
 
 This case study focuses on the second problem. M6D uses logistic regression for this problem because it’s highly scalable and works great for binary outcomes like clicks.
 
-###Click Models
+### Click Models
 
 At M6D, they need to match clients, which represent advertising companies, to individual users. Generally speaking, the advertising companies want to target ads to users based on a user’s likelihood to click. Let’s discuss what kind of data they have available first, and then how you’d build a model using that data.
 
@@ -259,8 +259,8 @@ click url_1 url_2 url_3 url_4 url_5
 
 Call this matrix “train,” and then the command line in R would be:
 
-fit <- glm(click ~ url_1 + url_2 + url_3 + url_4 + url_5,
-           data = train, family = binomial(logit))
+    fit <- glm(click ~ url_1 + url_2 + url_3 + url_4 + url_5,
+               data = train, family = binomial(logit))
 
 ### Evaluation
 
@@ -335,6 +335,7 @@ Media 6 Degrees kindly provided a dataset that is perfect for exploring logistic
 
 ### Sample R Code
 
+```{r, comment=NA}
 # Author: Brian Dalessandro
 # Read in data, look at the variables and create a training and test set
 file <- "binary_class_dataset.txt"
@@ -501,3 +502,4 @@ perf3 <- performance(pred,'tpr','fpr')
 plot(perf1, color="blue", main="LAST_SV (blue),
      LAST_BUY (red), num_checkins (green)")
 plot(perf2, col="red", add=TRUE) plot(perf3, col="green", add=TRUE)
+```
