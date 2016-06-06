@@ -244,6 +244,8 @@ A compromise would have α and β be positive but small, like 1/5. That would ke
 
 Sometimes α and β are called “pseudo-counts.” Another common name is “hyperparameters.” They’re fancy but also simple. It’s up to you, the data scientist, to set the values of these two hyperparameters in the numerator and denominator for smoothing, and it gives you two knobs to tune. By contrast, k-NN has one knob, namely k, the number of neighbors. Naive Bayes is a linear classifier, while k-NN is not. The curse of dimensionality and large feature sets are a problem for k-NN, while Naive Bayes performs well. k-NN requires no training (just load in the dataset), whereas Naive Bayes does. Both are examples of supervised learning (the data comes labeled).
 
+
+```
 ## Sample Code in bash
 
 #!/bin/bash
@@ -322,6 +324,7 @@ echo "P(spam|$word) =" $Pspam_word
 
 # return original directory
 cd ..
+```
 
 ## Scraping the Web: APIs and Other Tools
 
@@ -398,6 +401,7 @@ Evaluate performance on a randomized 50/50 train/test split of the data, includi
 
 Briefly discuss how you expect the learned classifier to generalize to other contexts, e.g., articles from other sources or time periods.
 
+```{r, comment=NA}
 ### Sample R Code for Dealing with the NYT API
 
 # author: Jared Lander
@@ -494,6 +498,7 @@ container <- create_container(matrix = doc_matrix,
                               trainSize = theOrder[1:40],
                               testSize = theOrder[41:60], 
                               virgin = FALSE)
+```
 
 Historical Context: Natural Language Processing
 
