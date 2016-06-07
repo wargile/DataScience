@@ -27,24 +27,718 @@ by Daniel Kaplan and Deborah Nolan
 
 ## 2.1 Introduction
 
+Figure 2.1
+
 ### 2.1.1 Computational Topics
 
 ## 2.2 Reading Tables of Race Results into R
 
+Figure 2.2
+
+Figure 2.3
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+```{r, comment=NA}
+
+```
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 ## 2.3 Data Cleaning and Reformatting Variables
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.4
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.5
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 ## 2.4 Exploring the Run Time for All Male Runners
 
+```{r, comment=NA}
+
+```
+
+Figure 2.6
+
 ### 2.4.1 Making Plots with Many Observations
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.7
+
+```{r, comment=NA}
+
+```
+
+Figure 2.8
+
+Figure 2.9
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 ### 2.4.2 Fitting Models to Average Performance
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.10
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.11
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 ### 2.4.3 Cross-Sectional Data and Covariates
+
+Figure 2.12
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.13
+
+```{r, comment=NA}
+
+```
+
+Figure 2.14
+
+Figure 2.15
+
 
 ## 2.5 Constructing a Record for an Individual Runner across Years
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.16
+
 ## 2.6 Modeling the Change in Running Time for Individuals
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.17
+
+```{r, comment=NA}
+
+```
+
+Figure 2.18
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 2.19
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 ## 2.7 Scraping Race Results form the Web
 
+Figure 2.20
+
+Figure 2.21
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 ## 2.8 Exercises
+
+Q.1
+
+Q.2
+
+Q.3
+
+Q.4
+
+Q.5
+
+Q.6
+
+Q.7
+
+Q.8
+
+Q.9
+
+Q.10
+
+Q.11
+
+Q.12
+
+Q.13
+
+Q.14
+
+Q.15
+
+Q.16
+
+Q.17
+
+Q.18
+
+Q.19
