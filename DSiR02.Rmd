@@ -279,7 +279,7 @@ Figure 2.7: Revised Scatter Plot of Male Runners. This plot revises the simple s
 
 Figure 2.8: Smoothing Scatter Plot of Male Runners Race Times vs. Age. This plot offers an alternative to the scatter plot of Figure 2.7 that uses jittering and transparent color to ameliorate the over plotting. Here there is no need to jitter age because the smoothing action essentially does that for us by spreading an individual runner's (age, run time) pair over a small region. The shape of the high density region has a very similar shape to the earlier plot.
 
-Figure 2.9: 
+Figure 2.9: Side-by-Side Boxplots of Male Runners' Run Time vs. Age. This sequence of boxplots shows the quartiles of time for men grouped into 10-year age intervals. As age increases, all the quartiles increase. However, the box becomes asymmetrical with age, which indicates that the upper quartile increases faster than the median and lower quartile.
 
 ```{r, comment=NA}
 
