@@ -149,7 +149,7 @@ Figure 2.3: Screen Shot of Men's 2011 Race Results. This screenshot shows the re
 
 ```
 
-Figure 2.4
+Figure 2.4: Box Plot of Age by Year. These side-by-side boxplots of age for each race year show a few problems with the data for 2003 and 2006. The runners in these years are unusually young.
 
 ```{r, comment=NA}
 
@@ -159,7 +159,7 @@ Figure 2.4
 
 ```
 
-Figure 2.5
+Figure 2.5: Box Plot of Age by Year. These side-by-side boxplots of age for each race year show a reasonable age distribution. For example, the lower quartile for all years range between 29 and 32. The problems indentified earlier for 2003 and 2006 have been addressed.
 
 ```{r, comment=NA}
 
@@ -251,7 +251,7 @@ Figure 2.5
 
 ```
 
-Figure 2.6
+Figure 2.6: Default Scatter Plot for Run Time vs. Age for Male Runners. This plot demonstrated that a simple plot of run time by age for the 70,000 male runners leads to such severe overplotting that the shape of the data is not descernible.
 
 ### 2.4.1 Making Plots with Many Observations
 
