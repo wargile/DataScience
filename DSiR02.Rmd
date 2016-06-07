@@ -341,7 +341,7 @@ Figure 2.10: Residual Plot from Fitting a Simple Linear Model of Performance to 
 
 ```
 
-Figure 2.11
+Figure 2.11: Piecewise Linear and Loess Curves Fitted to Run Time vs. Age. Here we have plotted the fitted curves from loess() and a piecewise linear model with hinges at 30, 40, 50, and 60. These curves follow each other quite closely. However, there appears to be more curvature in the over 50 loess fit that is not captured in the piecewise linear fit.
 
 ```{r, comment=NA}
 
@@ -385,7 +385,7 @@ Figure 2.11
 
 ### 2.4.3 Cross-Sectional Data and Covariates
 
-Figure 2.12
+Figure 2.12: Line Plot of the Number of Male Runners by Year. This plot shows that the number of male runners in the Cherry Blossom 10-mile race has more that doubled from 1999 to 2012.
 
 ```{r, comment=NA}
 
