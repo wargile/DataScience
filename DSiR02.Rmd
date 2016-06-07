@@ -271,15 +271,15 @@ Figure 2.6: Default Scatter Plot for Run Time vs. Age for Male Runners. This plo
 
 ```
 
-Figure 2.7
+Figure 2.7: Revised Scatter Plot of Male Runners. This plot revises the simple scatter plot of Figure 2.6 by changing the plotting symbol from a circle to a disk, reducing the size of the plotting symbol, using a transparent color for the disk, and adding a small amount of random noise to age. Now we see the shape of the high density region containing more of the runners and the lidght upward trend of time with increasing age.
 
 ```{r, comment=NA}
 
 ```
 
-Figure 2.8
+Figure 2.8:
 
-Figure 2.9
+Figure 2.9:
 
 ```{r, comment=NA}
 
