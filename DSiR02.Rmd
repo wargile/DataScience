@@ -399,15 +399,15 @@ Figure 2.12: Line Plot of the Number of Male Runners by Year. This plot shows th
 
 ```
 
-Figure 2.13
+Figure 2.13: Density Curves for the Age of Male Runners in 1999 and 2012. These two density curves have quite different shapes. The 1999 male runners have a broad, nearly flat mode where they are roughly evenly distributed in age from 28 to 45. In contrast, the 2012 runners are younger with a sharper peak just under 30 years and a skew right distribution.
 
 ```{r, comment=NA}
 
 ```
 
-Figure 2.14
+Figure 2.14: Loess Curves Fit to Performance for 1999 and 2012 Male Runners. This loess fit of run time to age for 2012 malre runners sits above the fit for 1999 male runners. The gap between these curves is about 5 minutes for most years. The exception is in the late 40s to early 60s where the curves are within 2-3 minutes of each other. Both curves have a similar shape. 
 
-Figure 2.15
+Figure 2.15: Difference between Loess Curves. This line plot shows the diffence between the predicted run time for 2012 and 1999 male runners.
 
 
 ## 2.5 Constructing a Record for an Individual Runner across Years
