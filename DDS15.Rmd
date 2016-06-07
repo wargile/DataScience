@@ -15,12 +15,13 @@ by Rachel Schutt and Cathy O’Neil
 
 # CHAPTER 15 The Students Speak
 
+*Every algorithm is editorial.* — Emily Bell (director of the Tow Center for Digital Journalism at Columbia’s Graduate School of Journalism)
+
 We invited the students who took Introduction to Data Science version 1.0 to contribute a chapter to the book. They chose to use their chapter to reflect on the course and describe how they experienced it. Contributors to this chapter are Alexandra Boghosian, Jed Dougherty, Eurry Kim, Albert Lee, Adam Obeng, and Kaz Sakamoto.
 
 ## Process Thinking
 
 When you’re learning data science, you can’t start anywhere except the cutting edge.
-— Emily Bell (director of the Tow Center for Digital Journalism at Columbia’s Graduate School of Journalism)
 
 An introductory physics class will typically cover mechanics, electricity, and magnetism, and maybe move on to some more “modern” subjects like special relativity, presented broadly in order of ascending difficulty. But this presentation of accumulated and compounded ideas in an aggregated progression doesn’t give any insight into, say, how Newton actually came up with a differential calculus. We are not taught about his process; how he got there. We don’t learn about his tools or his thoughts. We don’t learn which books he read or whether he took notes. Did he try to reproduce other people’s proofs? Did he focus on problems that followed from previous writing? What exactly made him think, “I just can’t do this without infinitesimals?” Did Newton need scratch paper? Or did the ideas emerge somehow fully formed when he saw an apple drop? These things aren’t taught, but they have to be learned; this process is what the fledgling scientists will actually have to do.
 
@@ -30,13 +31,11 @@ That is not to say that Rachel left us in the dark. On the first day of class, s
 
 But we didn’t just listen to people talk about their jobs week after week. We learned the tools of the trade with lots of difficult, head-to-table homework. Sometimes the assignments required us to implement the techniques and concepts we had discussed in the lectures. Other times we had to discover and use skills we didn’t even know existed.
 
-What’s more, we were expected to deal with messy real-world data. We often worked on industry-related problems, and our homework was to be completed in the form of a clear and thoughtful report — something we could pride ourselves in presenting to an industry professional. Most importantly we often had little choice but to reach out beyond our comfort zones to one another to complete assignments. The social nature of data science was emphasized, and in addition to the formal groupings for assignments and projects, Rachel would often take us to the bar across the street along with whoever had presented that evening.1 We worked and drank together throughout the course, learning from one another and building our skills together.
+What’s more, we were expected to deal with messy real-world data. We often worked on industry-related problems, and our homework was to be completed in the form of a clear and thoughtful report — something we could pride ourselves in presenting to an industry professional. Most importantly we often had little choice but to reach out beyond our comfort zones to one another to complete assignments. The social nature of data science was emphasized, and in addition to the formal groupings for assignments and projects, Rachel would often take us to the bar across the street along with whoever had presented that evening [1]. We worked and drank together throughout the course, learning from one another and building our skills together.
 
 ## Naive No Longer
 
 Our reckoning came on the third subsection of our second homework assignment, “Jake’s Exercise: Naive Bayes for Article Classification” on page 109. It required us to download 2,000 articles from the New York Times — which only allowed a pull of 20 articles at a time — and train a simple Naive Bayes classifier to sort them by the section of the newspaper in which they appeared. Acquiring the articles was only half the challenge. While there are packages for many languages that implement Naive Bayes, we had to write our own code, with nothing more than a few equations for guidance. Not that using an existing package would not have helped us. Unlike them, our version had to include tunable regularization hyperparameters. It also demanded that we classify the articles across five categories instead of two. As we were told, simple Naive Bayes isn’t particularly naive, nor very Bayesian. Turns out it’s not that simple, either. Still, those of us who stayed in the class through the pain of spending 40 hours “polishing” 300 lines of disgustingly hacky R code got the pleasure of seeing our models graze 90% predictive accuracy. We were instantly hooked. Well, maybe it was the sunk cost. But still, we were hooked. Figure 15-1 shows one student’s solution to the homework.
-
-1. Rachel’s note: it was a graduate-level course. I made sure students were of age and that there were non-alcoholic options.
 
 Figure 15-1. Part of a student’s solution to a homework assignment
 
@@ -68,8 +67,7 @@ Having listened to and conversed with these experts, we formed more questions. H
 
 It’s not as if there’s some platonic repository of perfect data science knowledge that you can absorb by osmosis. There are various good practices from various disciplines, and different vocabularies and interpretations for the same method (is the regularization parameter a prior, or just there for smoothing? Should we choose it on principled grounds or in order to maximize fit?) There is no institutionalized knowledge because there are no institutions, and that’s why the structure of interactions matters: you can can create your own institutions. You choose who you are influenced by, as Gabriel Tarde put it (via Bruno Latour, via Mark Hansen):
 
-When a young farmer, facing the sunset, does not know if he should believe his school master asserting that the fall of the day is due to the movement of the earth and not of the sun, or if he should accept as witness his senses that tell him the opposite, in this case, there is one imitative ray, which, through his school master, ties him to Galileo.
-— Gabriel Tarde
+*When a young farmer, facing the sunset, does not know if he should believe his school master asserting that the fall of the day is due to the movement of the earth and not of the sun, or if he should accept as witness his senses that tell him the opposite, in this case, there is one imitative ray, which, through his school master, ties him to Galileo.* — Gabriel Tarde
 
 Standing on the shoulders of giants is all well and good, but before jumping on someone’s back you might want to make sure that they can take the weight. There is a focus in the business world to use data science to sell advertisements. You may have access to the best dataset in the world, but if the people employing you only want you to find out how to best sell shoes with it, is it really worth it?
 
@@ -81,17 +79,18 @@ David Madigan emphasized the ethical challenges of editorial decisions in this e
 
 The academic world has a bit of the same problem as the business world, but for different reasons. The different bits of data science are so split between disciplines that by studying them individually it becomes nearly impossible to get a holistic view of how these chunks fit together, or even that they could fit together. A purely academic approach to data science can sterilize and quantize it to the point where you end up with the following, which is an actual homework problem from the chapter “Linear Methods for Regression” in The Elements of Statistical Learning:
 
-Ex. 3.2 Given data on two variables X and Y, consider fitting a cubic polynomial regression model f X =∑3 βjXj 
-j=0
-
-In addition to plotting the fitted curve, you would like a 95% confidence band about the curve. Consider the following two approaches:
+```
+```
+Ex. 3.2 Given data on two variables X and Y, consider fitting a cubic polynomial regression model f(X) = sum(β[j]X^j, j = 0:3). In addition to plotting the fitted curve, you would like a 95% confidence band about the curve. Consider the following two approaches:
 
 1. At each point x0, form a 95% confidence interval for the linear
-function αT β = ∑ 3 β j x0 j . j=0
+function t(α)\*β = sum(β[j]\*x[0]^j, j = 0:3).
 
-2. Form a 95% confidence set for β, which in turn generates confidence intervals for f x0 .
+2. Form a 95% confidence set for β, which in turn generates confidence intervals for f(x[0]).
 
 How do these approaches differ? Which band is likely to be wider? Conduct a small simulation experiment to compare the two methods.
+```
+```
 
 This is the kind of problem you might be assigned in a more general machine learning or data mining class. As fledgling data scientists, our first reaction is now skeptical. At which point in the process of doing data science would a problem like this even present itself? How much would we have to have already done to get to this point? Why are we considering these two variables in particular? How come we’re given data? Who gave it to us? Who’s paying them? Why are we calculating 95% confidence intervals? Would another performance metric be better? Actually, who cares how well we perform on what is, essentially, our training data?
 
@@ -108,3 +107,5 @@ The students improved on the original data science profile from back in Chapter 
 Figure 15-3. The Stars of Data Science (a collaborative effort among many students including Adam Obeng, Eurry Kim, Christina Gutierrez, Kaz Sakamoto, and Vaibhav Bhandari)
 
 Figure 15-4. A Constellation is Born (Kaz Sakamoto, Eurry Kim and Vaibhav Bhandari created this as part of a larger class collaboration)
+
+[1] Rachel’s note: it was a graduate-level course. I made sure students were of age and that there were non-alcoholic options.

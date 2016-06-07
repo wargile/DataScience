@@ -294,5 +294,3 @@ Josh prefers standard data formats: text is big and takes up space. Thrift, Avro
 If you are working at a company that has a Hadoop cluster, it’s likely that your first experience will be with Apache Hive, which provides a SQL-style abstraction on top of HDFS and MapReduce. Your first MapReduce job will probably involve analyzing logs of user behavior in order to get a better understanding of how customers are using your company’s products.
 
 If you are exploring Hadoop and MapReduce on your own for building analytical applications, there are a couple of good places to start. One option is to build a recommendation engine using Apache Mahout, a collection of machine learning libraries and command-line tools that works with Hadoop. Mahout has a collaborative filtering engine called Taste that can be used to create recommendations given a CSV file of user IDs, item IDs, and an optional weight that indicates the strength of the relationship between the user and the item. Taste uses the same recommendation algorithms that Netflix and Amazon use for building recommendations for their users.
-
-Every algorithm is editorial.
