@@ -331,7 +331,7 @@ Figure 2.9: Side-by-Side Boxplots of Male Runners' Run Time vs. Age. This sequen
 
 ```
 
-Figure 2.10
+Figure 2.10: Residual Plot from Fitting a Simple Linear Model of Performance to Age. Shown here is a smoothing scatter plot of the residuals from the fit of the simple linear model of run time to age for male runners who are 15 to 80 years old. Overlaid on the scatter plot are two curves. The "curve" in purple is a solid horizontal line at y = 0. The green dashed curve is a local smooth of the residuals.
 
 ```{r, comment=NA}
 
