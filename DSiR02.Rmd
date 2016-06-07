@@ -27,15 +27,15 @@ by Daniel Kaplan and Deborah Nolan
 
 ## 2.1 Introduction
 
-Figure 2.1
+Figure 2.1: Screen Shot of Cherry Blossom Run Web site. This page contains links to each year's race results. The year 1999 is the earliest for which they provide data. Men's and women's results are listed separately.
 
 ### 2.1.1 Computational Topics
 
 ## 2.2 Reading Tables of Race Results into R
 
-Figure 2.2
+Figure 2.2: Screen Shot of the 2012 Male Results. This screenshot shows the results, in race order, for mean competing in the 2012 Cherry Blossom 10 Mile Run. Notice that both 5-mile times and net times are provided. We know that the Time column is net time because it is so indicated in the header of the table.
 
-Figure 2.3
+Figure 2.3: Screen Shot of Men's 2011 Race Results. This screenshot shows the results, in race order, for men competing in the 2011 Cherry Blossom road race. Notice that in 2011, 3 times are recorded - the time to compete the first 5 miles and the gun and net times for the full run. In contrast, the results from 2012 do not provide gun time.
 
 ```{r, comment=NA}
 
