@@ -564,7 +564,7 @@ Figure 2.15: Difference between Loess Curves. This line plot shows the diffence 
 
 ```
 
-Figure 2.16
+Figure 2.16: Screen Shot of One Runner's Web Page of Race Results. This Web page at http://storage.athlinks.com contains the race results of one runner who participated in the Cherry Blossom run for 12 of the 14 years for which we have data. Notice that his fastest time was for his most recent run in 2012 where he completed the race in under 85 minutes. He was 45 at that time. Also, his slowest time was 123 minutes in 2002 at the age of 35.
 
 ## 2.6 Modeling the Change in Running Time for Individuals
 
@@ -588,13 +588,13 @@ Figure 2.16
 
 ```
 
-Figure 2.17
+Figure 2.17: 
 
 ```{r, comment=NA}
 
 ```
 
-Figure 2.18
+Figure 2.18:
 
 ```{r, comment=NA}
 
