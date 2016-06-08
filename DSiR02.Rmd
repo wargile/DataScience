@@ -604,7 +604,7 @@ Figure 2.18: Linear Fits of Run Time to Age for Indiviudal Runners. Here we have
 
 ```
 
-Figure 2.19: Coefficients from Logitudinal Analysis of Athletes. This scatter plot displays 
+Figure 2.19: Coefficients from Logitudinal Analysis of Athletes. This scatter plot displays the slope of the fitted line to each of the 300+ runners who competed in at least 8 Cherry Blossom road races. A negative coefficient indicates the runner is getting faster as he ages. The plot includes a least squares fitted line and a loess fitted curve. Notice that nearly all of the coefficients for those over 50 are positive. The typical size of this coefficient for a 50-year old is about one minute per year.
 
 ```{r, comment=NA}
 
@@ -616,9 +616,9 @@ Figure 2.19: Coefficients from Logitudinal Analysis of Athletes. This scatter pl
 
 ## 2.7 Scraping Race Results form the Web
 
-Figure 2.20
+Figure 2.20: Screen Shot of the Source for Men's 2012 Cherry Blossom Results. This screen shot is of the HTML source for the male results for the 2012 Cherry Blossom road race. While the format is not quite the same as the female results for 2011 (see Figure 2.21), both are plain text tables withing \<pre\> notes in an HTML document.
 
-Figure 2.21
+Figure 2.21:
 
 ```{r, comment=NA}
 
