@@ -604,7 +604,7 @@ Figure 2.18: Linear Fits of Run Time to Age for Indiviudal Runners. Here we have
 
 ```
 
-Figure 2.19
+Figure 2.19: Coefficients from Logitudinal Analysis of Athletes. This scatter plot displays 
 
 ```{r, comment=NA}
 
