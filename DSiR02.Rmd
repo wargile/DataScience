@@ -588,13 +588,13 @@ Figure 2.16: Screen Shot of One Runner's Web Page of Race Results. This Web page
 
 ```
 
-Figure 2.17: Run Times for Multiple Races. These line plots show the times for male runners who completed at least 8 Cherry Blossom races. Each set of connected segments correpsonds to the run times for one athlete. Looking at all line plots, we see a similar shape to the scatter plot in Figure 2.7, i.e., an upward curve with age. However, we can also see how an individual's preformance changes. For example, many middle-aged runners show a sharp increase in run time with age but aht si nto the case for all. Some of them improve and others change more slowly.
+Figure 2.17: Run Times for Multiple Races. These line plots show the times for male runners who completed at least 8 Cherry Blossom races. Each set of connected segments correpsonds to the run times for one athlete. Looking at all line plots, we see a similar shape to the scatter plot in Figure 2.7, i.e., an upward curve with age. However, we can also see how an individual's preformance changes. For example, many middle-aged runners show a sharp increase in run time with age but that is not the case for all. Some of them improve and others change more slowly.
 
 ```{r, comment=NA}
 
 ```
 
-Figure 2.18:
+Figure 2.18: Linear Fits of Run Time to Age for Indiviudal Runners. Here we have augmented the bottom-right line plot from Figure 2.17 with the least squares fit of run time for each of the athletes. These are the 30 or so black dashed line segments plotted on each of the individual runner's times series.
 
 ```{r, comment=NA}
 
