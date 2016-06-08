@@ -618,7 +618,7 @@ Figure 2.19: Coefficients from Logitudinal Analysis of Athletes. This scatter pl
 
 Figure 2.20: Screen Shot of the Source for Men's 2012 Cherry Blossom Results. This screen shot is of the HTML source for the male results for the 2012 Cherry Blossom road race. While the format is not quite the same as the female results for 2011 (see Figure 2.21), both are plain text tables withing \<pre\> notes in an HTML document.
 
-Figure 2.21:
+Figure 2.21: Screen Shot of the Source for Women's 2011 Cherry Blossom Results. This screen shot is of the HTML source for the female resutts for the 2011 Cherry Blossom road race. Notice that times given are for the midpoint of the race (5 Mile) and for two finish times (Time and Net Time). Also notice the leftmost column labeled S. While the format is different than the male results for 2012, both are plain text tables within \<pre\> nodes in an HTML document.
 
 ```{r, comment=NA}
 
