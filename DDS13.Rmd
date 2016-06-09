@@ -13,13 +13,11 @@ output: html_document
 
 by Rachel Schutt and Cathy O’Neil
 
-# CHAPTER 13 Lessons Learned from Data
+# CHAPTER 13 Lessons Learned from Data Competitions: Data Leakage and Model Evaluation
 
-Competitions: Data Leakage and Model Evaluation
+The contributor for this chapter is Claudia Perlich. Claudia has been the Chief Scientist at Media 6 Degrees (M6D) [1] for the past few years. Before that she was in the data analytics group at the IBM center that developed Watson [2], the computer that won Jeopardy! [3] (although she didn’t work on that project). Claudia holds a master’s in computer science, and got her PhD in information systems at NYU. She now teaches a class to business students on data science, where she addresses how to assess data science work and how to manage data scientists.
 
-The contributor for this chapter is Claudia Perlich. Claudia has been the Chief Scientist at Media 6 Degrees (M6D) for the past few years. Before that she was in the data analytics group at the IBM center that developed Watson, the computer that won Jeopardy! (although she didn’t work on that project). Claudia holds a master’s in computer science, and got her PhD in information systems at NYU. She now teaches a class to business students on data science, where she addresses how to assess data science work and how to manage data scientists.
-
-Claudia is also a famously successful data mining competition winner. She won the KDD Cup in 2003, 2007, 2008, and 2009, the ILP Challenge in 2005, the INFORMS Challenge in 2008, and the Kaggle HIV competition in 2010.
+Claudia is also a famously successful data mining competition winner. She won the KDD Cup [4] in 2003, 2007, 2008, and 2009, the ILP Challenge [5] in 2005, the INFORMS Challenge [6] in 2008, and the Kaggle [7]  HIV competition in 2010.
 
 More recently she’s turned toward being a data mining competition organizer, first for the INFORMS Challenge in 2009, and then for the Heritage Health Prize in 2011. Claudia claims to be retired from competition. Fortunately for the class, she provided some great insights into what can be learned from data competitions. From the many competitions she’s done, she’s learned quite a bit in particular about data leakage, and how to evaluate the models she comes up with for the competitions.
 
@@ -28,30 +26,16 @@ More recently she’s turned toward being a data mining competition organizer, f
 Claudia started by asking what people’s reference point might be to evaluate where they stand with their own data science profile (hers is shown in Table 13-1. Referring to the data scientist profile from Chapter 1, she said, “There is one skill that you do not have here and that is the most important and the hardest to describe: Data.” She knows some of the world’s best mathematicians, machine language experts, statisticians, etc. Does she calibrate herself toward what is possible (the experts) or just relative to the average person in her field, or just an average person?
 
 Table 13-1. Claudia’s data science profile
-passable
-strong
-solid
-comment
-Visualization
-x
-I can do it but I do not believe in visualization
-Computer Science
-x
-I have 2 Masters Degrees in CS. I can hack, not production code.
-Math
-x
-That was a long time ago
-Stats
-x
-Little formal training, a lot of stuff picked up on the way and good intuition
-Machine Learning
-x
-Domain
-You are asking the wrong question...
-Presentation
-x
-Data
-x
+Skill            passable  strong solid comment
+---------------- --------- ------ ----- ------------------------------------------------
+Visualization    x         _      _     I can do it but I do not believe in visualization
+Computer Science x         _      _     I have 2 Masters Degrees in CS. I can hack, not production code.
+Math             x         _      _     That was a long time ago
+Stats            _         x      _     Little formal training, a lot of stuff picked up on the way and good intuition
+Machine Learning _         _      x     _
+Domain           _         _      _     You are asking the wrong question...
+Presentation     _         _      x     _
+Data             _         _      x     _
 
 ### The Life of a Chief Data Scientist
 
@@ -65,7 +49,7 @@ Claudia’s primary skills are data manipulation using tools like Unix, sed, awk
 
 Being a woman works well in the field of data science, where intuition is useful and is regularly applied. One’s nose gets so well developed by now that one can smell it when something is wrong, although this is not the same thing as being able to prove something algorithmically. Also, people typically remember women, even when women don’t remember them. It has worked in her favor, Claudia says, which she’s happy to admit. But then again, she is where she is fundamentally because she’s good.
 
-Being in academia, Claudia has quite a bit of experience with the process of publishing her work in journals and the like. She discussed whether papers submitted for journals and/or conferences are blind to gender. For some time, it was typically double-blind, but now it’s more likely to be one-sided. Moreover, there was a 2003 paper written by Shawndra Hill and Foster Provost that showed you can guess who wrote a paper with 40% accuracy just by knowing the citations, and even more if the author had more publications. Hopefully people don’t actually use such models when they referee, but in any case, that means making things “blind” doesn’t necessarily help. More recently the names are included, and hopefully this doesn’t make things too biased. Claudia admits to being slightly biased herself toward institutions — in her experience, certain institutions prepare better work.
+Being in academia, Claudia has quite a bit of experience with the process of publishing her work in journals and the like. She discussed whether papers submitted for journals and/or conferences are blind to gender. For some time, it was typically double-blind, but now it’s more likely to be one-sided. Moreover, there was a 2003 paper written by Shawndra Hill and Foster Provost [8] that showed you can guess who wrote a paper with 40% accuracy just by knowing the citations, and even more if the author had more publications. Hopefully people don’t actually use such models when they referee, but in any case, that means making things “blind” doesn’t necessarily help. More recently the names are included, and hopefully this doesn’t make things too biased. Claudia admits to being slightly biased herself toward institutions — in her experience, certain institutions prepare better work.
 
 ## Data Mining Competitions
 
@@ -77,33 +61,33 @@ KDD Cups
 
 All the KDD Cups, with their tasks and corresponding datasets, can be found at http://www.kdd.org/kddcup/index.php. Here’s a list:
 
-• KDD Cup 2010: Student performance evaluation
+- KDD Cup 2010: Student performance evaluation
 
-• KDD Cup 2009: Customer relationship prediction
+- KDD Cup 2009: Customer relationship prediction
 
-• KDD Cup 2008: Breast cancer
+- KDD Cup 2008: Breast cancer
 
-• KDD Cup 2007: Consumer recommendations
+- KDD Cup 2007: Consumer recommendations
 
-• KDD Cup 2006: Pulmonary embolisms detection from image data
+- KDD Cup 2006: Pulmonary embolisms detection from image data
 
-• KDD Cup 2005: Internet user search query categorization
+- KDD Cup 2005: Internet user search query categorization
 
-• KDD Cup 2004: Particle physics; plus protein homology prediction
+- KDD Cup 2004: Particle physics; plus protein homology prediction
 
-• KDD Cup 2003: Network mining and usage log analysis
+- KDD Cup 2003: Network mining and usage log analysis
 
-• KDD Cup 2002: BioMed document; plus gene role classification
+- KDD Cup 2002: BioMed document; plus gene role classification
 
-• KDD Cup 2001: Molecular bioactivity; plus protein locale prediction
+- KDD Cup 2001: Molecular bioactivity; plus protein locale prediction
 
-• KDD Cup 2000: Online retailer website clickstream analysis
+- KDD Cup 2000: Online retailer website clickstream analysis
 
-• KDD Cup 1999: Computer network intrusion detection
+- KDD Cup 1999: Computer network intrusion detection
 
-• KDD Cup 1998: Direct marketing for profit optimization
+- KDD Cup 1998: Direct marketing for profit optimization
 
-• KDD Cup 1997: Direct marketing for lift curve optimization
+- KDD Cup 1997: Direct marketing for lift curve optimization
 
 On the other hand, you have the “real world” kind of data mining competition, where you’re handed raw data (which is often in lots of different tables and not easily joined), you set up the model yourself, and come up with task-specific evaluations. This kind of competition simulates real life more closely, which goes back to Rachel’s thought experiment earlier in this book about how to simulate the chaotic experience of being a data scientist in the classroom. You need practice dealing with messiness.
 
@@ -201,9 +185,9 @@ Moreover, to avoid telling holes in the data, the preparer moved the other diagn
 
 There are two problems with this:
 
-• If the row has only “–1”s, then you know it started out with only pneumonia.
+- If the row has only “–1”s, then you know it started out with only pneumonia.
 
-• If the row has no “–1”s, you know there’s no pneumonia (unless there are actually five diagnoses, but that’s less common).
+- If the row has no “–1”s, you know there’s no pneumonia (unless there are actually five diagnoses, but that’s less common).
 
 This alone was enough information to win the competition.
 
@@ -306,3 +290,19 @@ According to Claudia, humans are not meant to understand data. Data is outside o
 We are also not meant to understand uncertainty: we have all kinds of biases that prevent this from happening that are well documented. Hence, modeling people in the future is intrinsically harder than figuring out how to label things that have already happened.
 
 Even so, we do our best, and this is through careful data generation, meticulous consideration of what our problem is, making sure we model it with data close to how it will be used, making sure we are optimizing to what we actually desire, and doing our homework to learn which algorithms fit which tasks.
+
+[1] http://dstillery.com
+
+[2] https://en.wikipedia.org/wiki/Watson_(computer)
+
+[3] https://en.wikipedia.org/wiki/Jeopardy!
+
+[4] http://www.kdd.org/kdd-cup
+
+[5] http://ida.felk.cvut.cz/ilp2012/
+
+[6] http://www.kdnuggets.com/news/2008/n07/8i.html
+
+[7] https://www.kaggle.com
+
+[8] http://dl.acm.org/citation.cfm?id=981001
