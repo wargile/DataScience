@@ -387,6 +387,10 @@ Figure 3.2: Comparison of Type I and II Error Rates. The Type I and II error rat
 
 3.6.4 Computational Considerations
 
+```{r, comment=NA}
+
+```
+
 3.7 Recursive Partitioning and Classification Trees
 
 Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple example of a recursive partition fitted model. It was fitted using the rpart() function and restricting the tree depth to 3 levels. The first yes-no question is whether the percentage of capitals in the message is less than 13. If not, the second question is whether there are fewer than 289 characters in the message. If the answer to this question is also no, then the next question is whether the message header contains an InReplyTo key. If the answer is again no, then the message is classified as spam. Of the 6232 messages in the training set, 77 ham and 643 spam fall into this leaf. The spam have been correctly classified and the 77 ham have been misclassified.
@@ -395,9 +399,97 @@ Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple examp
 
 3.8.1 Processing the Header
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.8.2 Processing Attachments
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.8.3 Testing Our Code on More email Data
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 3.8.4 Completing the Process
 
