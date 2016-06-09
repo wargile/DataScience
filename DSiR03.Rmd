@@ -33,14 +33,117 @@ by Deborah Nolan and Duncan Temple Lang
 
 3.3 Reading the email Messages
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.4 Text Mining and Naive Bayes Classification
 
 3.5 Finding the Words in a Message
 
 3.5.1 Splitting the Message into Its Header and Body
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.5.2 Removing Attachments from the Message Body
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 3.5.3 Extracting Words from the Message Body
 
 3.5.4 Completing the Data Preparation Process
