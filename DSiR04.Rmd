@@ -25,26 +25,26 @@ http://www.rdatasciencecases.org
 
 by Samuel E. Buttrey, Timothy H. Chung, James N. Eagle, and Duncan W. Temple Lang
 
-4.1 Description
+## 4.1 Description
 
-4.1.1 Computational Topics
+### 4.1.1 Computational Topics
 
-4.2 The Data
+## 4.2 The Data
 
-4.2.1 Reading an Entire Log File
+### 4.2.1 Reading an Entire Log File
 
-4.2.2 Exploring Log Files
+### 4.2.2 Exploring Log Files
 
-4.2.3 Visualizing the Path
+### 4.2.3 Visualizing the Path
 
-4.2.4 Exploring a “Look”
+### 4.2.4 Exploring a “Look”
 
-4.2.5 The Error Distribution for Range Values
+### 4.2.5 The Error Distribution for Range Values
 
-4.3 Detecting a Circular Target
+## 4.3 Detecting a Circular Target
 
-4.3.1 Connecting Segments Behind the Robot
+### 4.3.1 Connecting Segments Behind the Robot
 
-4.3.2 Determining If a Segment Corresponds to a Circule
+### 4.3.2 Determining If a Segment Corresponds to a Circule
 
-4.4 Detecting the Target with Streaming Data in Real Time
+## 4.4 Detecting the Target with Streaming Data in Real Time
