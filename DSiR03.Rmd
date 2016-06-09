@@ -311,9 +311,77 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.6.3 Classifying New Messages
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 Figure 3.1: Boxplot of Log Likelihood Ratio for Spam and Ham. The log likelikhood ration, log(P(spam | message content)/P(ham | message content)), for 3116 test messages was computed using a naive Bayes approximation based on word frequencies found in manually classified training data. The test messages are grouped according to whether they are spam or ham. Notice most ham messages have value well below 0 and nearly all spam values are above 0.
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 Figure 3.2: Comparison of Type I and II Error Rates. The Type I and II error rates for the 3116 test messages are show as a function of the threshold tau. For example, with a threshold of tau = -43, all messages with an LLR value above -43 are classified as spam and those below as ham. In this case, 1% of ham is misclassified as spam and 2% of spam is misclassified as ham.
 
