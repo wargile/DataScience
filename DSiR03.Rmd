@@ -53,9 +53,15 @@ by Deborah Nolan and Duncan Temple Lang
 
 3.6.3 Classifying New Messages
 
+Figure 3.1: Boxplot of Log Likelihood Ratio for Spam and Ham. The log likelikhood ration, log(P(spam | message content)/P(ham | message content)), for 3116 test messages was computed using a naive Bayes approximation based on word frequencies found in manually classified training data. The test messages are grouped according to whether they are spam or ham. Notice most ham messages have value well below 0 and nearly all spam values are above 0.
+
+Figure 3.2: Comparison of Type I and II Error Rates. The Type I and II error rates for the 3116 test messages are show as a function of the threshold tau. For example, with a threshold of tau = -43, all messages with an LLR value above -43 are classified as spam and those below as ham. In this case, 1% of ham is misclassified as spam and 2% of spam is misclassified as ham.
+
 3.6.4 Computational Considerations
 
 3.7 Recursive Partitioning and Classification Trees
+
+Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple example of a recursive partition fitted model. It was fitted using the rpart() function and restricting the tree depth to 3 levels. The first yes-no question is whether the percentage of capitals in the message is less than 13. If not, the second question is whether there are fewer than 289 characters in the message. If the answer to this question is also no, then the next question is whether the message header contains an InReplyTo key. If the answer is again no, then the message is classified as spam. Of the 6232 messages in the training set, 77 ham and 643 spam fall into this leaf. The spam have been correctly classified and the 77 ham have been misclassified.
 
 3.8 Organizing an email Message into an R Data Structure
 
@@ -69,7 +75,11 @@ by Deborah Nolan and Duncan Temple Lang
 
 3.9 Deriving Variables from the email Message
 
+Table 3.1: Variable Definition Table
+
 3.9.1 Checking Our Code for Errors
+
+Figure 3.4:
 
 3.10 Exploring the email Feature Set
 
