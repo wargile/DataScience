@@ -25,28 +25,28 @@ http://www.rdatasciencecases.org
 
 by Michael Kane
 
-5.1 Introduction
+## 5.1 Introduction
 
-5.1.1 Computational Topics
+### 5.1.1 Computational Topics
 
-5.2 Acquiring the Airline Data Set
+## 5.2 Acquiring the Airline Data Set
 
-5.3 Computing with Massive Data: Getting Flight Delay Counts
+## 5.3 Computing with Massive Data: Getting Flight Delay Counts
 
-5.3.1 The R Programming Environment
+### 5.3.1 The R Programming Environment
 
-5.3.2 The UNIX Shell
+### 5.3.2 The UNIX Shell
 
-5.3.3 An SQL Database with R
+### 5.3.3 An SQL Database with R
 
-5.3.4 The big memory Package with R
+### 5.3.4 The big memory Package with R
 
-5.4 Explanations Using Parallel Computing:  The Distribution of Flight Delays
+## 5.4 Explanations Using Parallel Computing:  The Distribution of Flight Delays
 
-5.4.1 Wring a Parallelizable Loop with foreach
+### 5.4.1 Wring a Parallelizable Loop with foreach
 
-5.4.2 Using the Split-Apply-Combine Approach for Better Performance
+### 5.4.2 Using the Split-Apply-Combine Approach for Better Performance
 
-5.4.3 Using Split-Apply-Combine to Find the Best Time to Fly
+### 5.4.3 Using Split-Apply-Combine to Find the Best Time to Fly
 
-5.5 From Exploration to Model:  Do Older Plans Suffer Greater Delays?
+## 5.5 From Exploration to Model:  Do Older Plans Suffer Greater Delays?
