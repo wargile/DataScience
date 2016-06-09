@@ -21,17 +21,17 @@ by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Chapter 3. Using Statistics to Identify Spam 
+# Chapter 3. Using Statistics to Identify Spam 
 
 by Deborah Nolan and Duncan Temple Lang
 
-3.1 Introduction
+## 3.1 Introduction
 
-3.1.1 Computational Topics
+### 3.1.1 Computational Topics
 
-3.2 Anatomy of an email Message
+## 3.2 Anatomy of an email Message
 
-3.3 Reading the email Messages
+## 3.3 Reading the email Messages
 
 ```{r, comment=NA}
 
@@ -85,11 +85,11 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.4 Text Mining and Naive Bayes Classification
+## 3.4 Text Mining and Naive Bayes Classification
 
-3.5 Finding the Words in a Message
+## 3.5 Finding the Words in a Message
 
-3.5.1 Splitting the Message into Its Header and Body
+### 3.5.1 Splitting the Message into Its Header and Body
 
 ```{r, comment=NA}
 
@@ -119,7 +119,7 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.5.2 Removing Attachments from the Message Body
+### 3.5.2 Removing Attachments from the Message Body
 
 ```{r, comment=NA}
 
@@ -205,7 +205,7 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.5.3 Extracting Words from the Message Body
+### 3.5.3 Extracting Words from the Message Body
 
 ```{r, comment=NA}
 
@@ -239,7 +239,7 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.5.4 Completing the Data Preparation Process
+### 3.5.4 Completing the Data Preparation Process
 
 ```{r, comment=NA}
 
@@ -261,9 +261,9 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.6 Implementing the Naive Bayes Classifier
+## 3.6 Implementing the Naive Bayes Classifier
 
-3.6.1 Test and Training Data
+### 3.6.1 Test and Training Data
 
 ```{r, comment=NA}
 
@@ -285,7 +285,7 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.6.2 Probability Estimates from Training Data
+### 3.6.2 Probability Estimates from Training Data
 
 ```{r, comment=NA}
 
@@ -331,7 +331,7 @@ by Deborah Nolan and Duncan Temple Lang
 
 ```
 
-3.6.3 Classifying New Messages
+### 3.6.3 Classifying New Messages
 
 ```{r, comment=NA}
 
@@ -385,23 +385,19 @@ Figure 3.1: Boxplot of Log Likelihood Ratio for Spam and Ham. The log likelikhoo
 
 Figure 3.2: Comparison of Type I and II Error Rates. The Type I and II error rates for the 3116 test messages are show as a function of the threshold tau. For example, with a threshold of tau = -43, all messages with an LLR value above -43 are classified as spam and those below as ham. In this case, 1% of ham is misclassified as spam and 2% of spam is misclassified as ham.
 
-3.6.4 Computational Considerations
+### 3.6.4 Computational Considerations
 
 ```{r, comment=NA}
 
 ```
 
-3.7 Recursive Partitioning and Classification Trees
+## 3.7 Recursive Partitioning and Classification Trees
 
 Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple example of a recursive partition fitted model. It was fitted using the rpart() function and restricting the tree depth to 3 levels. The first yes-no question is whether the percentage of capitals in the message is less than 13. If not, the second question is whether there are fewer than 289 characters in the message. If the answer to this question is also no, then the next question is whether the message header contains an InReplyTo key. If the answer is again no, then the message is classified as spam. Of the 6232 messages in the training set, 77 ham and 643 spam fall into this leaf. The spam have been correctly classified and the 77 ham have been misclassified.
 
-3.8 Organizing an email Message into an R Data Structure
+## 3.8 Organizing an email Message into an R Data Structure
 
-3.8.1 Processing the Header
-
-```{r, comment=NA}
-
-```
+### 3.8.1 Processing the Header
 
 ```{r, comment=NA}
 
@@ -443,7 +439,11 @@ Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple examp
 
 ```
 
-3.8.2 Processing Attachments
+```{r, comment=NA}
+
+```
+
+### 3.8.2 Processing Attachments
 
 ```{r, comment=NA}
 
@@ -469,7 +469,7 @@ Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple examp
 
 ```
 
-3.8.3 Testing Our Code on More email Data
+### 3.8.3 Testing Our Code on More email Data
 
 ```{r, comment=NA}
 
@@ -491,7 +491,7 @@ Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple examp
 
 ```
 
-3.8.4 Completing the Process
+### 3.8.4 Completing the Process
 
 ```{r, comment=NA}
 
@@ -509,7 +509,7 @@ Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple examp
 
 ```
 
-3.9 Deriving Variables from the email Message
+## 3.9 Deriving Variables from the email Message
 
 Table 3.1: Variable Definition Table
 
@@ -569,7 +569,7 @@ Table 3.1: Variable Definition Table
 
 ```
 
-3.9.1 Checking Our Code for Errors
+### 3.9.1 Checking Our Code for Errors
 
 ```{r, comment=NA}
 
@@ -597,7 +597,7 @@ Table 3.1: Variable Definition Table
 
 Figure 3.4: Comparison of Two Measures of Length for a Message. This scatter plot shows the relationship between the number of lines and the number of characters in the body of a message. The plot is on log scale, and 1 is added to all of the values before taking logs to address issues with empty bodies. The line y = x is added for comparison purposes.
 
-3.10 Exploring the email Feature Set
+## 3.10 Exploring the email Feature Set
 
 ```{r, comment=NA}
 
@@ -621,7 +621,7 @@ Figure 3.6: Comparison of the Amount of Capitaliation and the Size of the Messag
 
 Figure 3.7: Exploring Categorical Measures Derived from email. These two mosaic plots use area to denote the proportion of messages that fall in each category. The plot on the top shows those messages that have an "Re:" in the subject line tend not to be spam. The bottom plot shows that those messages that are from a user with a number at the end of their email address tend to be spam. However, few messagse are sent from such users so it is not clear how helpful this distinction will be in our classificaiton problem.
 
-3.11 Fitting the rpart() Model to the email Data
+## 3.11 Fitting the rpart() Model to the email Data
 
 ```{r, comment=NA}
 
@@ -679,7 +679,7 @@ Figure 3.8: Tree for Partitioning email to Predict Spam. This tree was fitted us
 
 Figure 3.9: Type I and II Errors for Recursive Partitioning. This plot displays the Type I and II errors for predicting spam as a function of the size of the complexity parameters in the rpart() function. The complexity parameter is a mechanism for specifying the threshold for choosing a split for a subgroup. Splits that do not achieve a gain in fit of at least the size of the parameter value provided are not made. The Type I error is minimized at a complexity parameter value of 0.001 for an error rate of 3.9%. The Type II error rate for this complexity parameter value is 10.5% 
 
-3.12 Exercises
+## 3.12 Exercises
 
 Q.1
 
