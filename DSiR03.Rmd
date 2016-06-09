@@ -493,19 +493,131 @@ Figure 3.3: Example Tree from a Recursive Partition. This tree is a simple examp
 
 3.8.4 Completing the Process
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.9 Deriving Variables from the email Message
 
 Table 3.1: Variable Definition Table
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 3.9.1 Checking Our Code for Errors
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 Figure 3.4: Comparison of Two Measures of Length for a Message. This scatter plot shows the relationship between the number of lines and the number of characters in the body of a message. The plot is on log scale, and 1 is added to all of the values before taking logs to address issues with empty bodies. The line y = x is added for comparison purposes.
 
 3.10 Exploring the email Feature Set
 
+```{r, comment=NA}
+
+```
+
 Figure 3.5: Use of Capitalization in email. These boxplots compare the percentage of capital letters amoung all letters in a message body for spam and ham. The use of a log scale makes it easier to see that nearly 3/4 of the spam have more capital letters than nearly all of the ham.
 
+```{r, comment=NA}
+
+```
+
 Figure 3.6: Comparison of the Amount of Capitaliation and the Size of the Message. This scatter plot examines the relationship between the percentage of capital letters among all letters in a message of the total number of characters in the message. Spam is marked by purple dots and ham by green. The darker color indictes overplotting. We see here that the spam tends to be longer and have more capital letters than ham.
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 
 Figure 3.7: Exploring Categorical Measures Derived from email. These two mosaic plots use area to denote the proportion of messages that fall in each category. The plot on the top shows those messages that have an "Re:" in the subject line tend not to be spam. The bottom plot shows that those messages that are from a user with a number at the end of their email address tend to be spam. However, few messagse are sent from such users so it is not clear how helpful this distinction will be in our classificaiton problem.
 
