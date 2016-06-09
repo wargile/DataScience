@@ -25,38 +25,38 @@ http://www.rdatasciencecases.org
 
 by Deborah Nolan and Duncan Temple Lang
 
-8.1 Introduction and Motivation
+## 8.1 Introduction and Motivation
 
-8.1.1 Computational Topics
+### 8.1.1 Computational Topics
 
-8.2 The Model
+## 8.2 The Model
 
-8.2.1 The Oder Cars Move
+### 8.2.1 The Oder Cars Move
 
-8.3 Implementing the BML Model
+## 8.3 Implementing the BML Model
 
-8.3.1 Creating the Initial Grid Configuration
+### 8.3.1 Creating the Initial Grid Configuration
 
-8.3.2 Testing the Grid Creating Function
+### 8.3.2 Testing the Grid Creating Function
 
-8.3.3 Displaying the Grid
+### 8.3.3 Displaying the Grid
 
-8.3.4 Visualizing the Grid
+### 8.3.4 Visualizing the Grid
 
-8.3.5 Simple and convient Object-Oriented Programming
+### 8.3.5 Simple and convient Object-Oriented Programming
 
-8.3.6 Moving the Cars
+### 8.3.6 Moving the Cars
 
-8.4 Evaluating the Performance of the Code
+## 8.4 Evaluating the Performance of the Code
 
-8.5 Implementing the BML Model in C
+## 8.5 Implementing the BML Model in C
 
-8.5.1 The Algorithm in C
+### 8.5.1 The Algorithm in C
 
-8.5.2 Compiling, Loading, and Calling the C Code
+### 8.5.2 Compiling, Loading, and Calling the C Code
 
-8.6 Running the Simulation
+## 8.6 Running the Simulation
 
-8.6.1 Exploring Car Velocity
+### 8.6.1 Exploring Car Velocity
 
-8.7 Experimental Compilation
+## 8.7 Experimental Compilation
