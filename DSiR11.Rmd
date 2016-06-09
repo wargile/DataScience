@@ -21,36 +21,36 @@ by Deborah Nolan and Duncan Temple Lang
 
 http://www.rdatasciencecases.org
 
-## Chapter 11. CIA Factbook Mashup 
+# Chapter 11. CIA Factbook Mashup 
 
 by Deborah Nolan and Duncan Temple Lang
 
-11.1 Introduction
+## 11.1 Introduction
 
-11.1.1 Computational Topics
+### 11.1.1 Computational Topics
 
-11.2 Acquiring the Data
+## 11.2 Acquiring the Data
 
-11.2.1 Extracting Latitude and Longitude from a CSV File
+### 11.2.1 Extracting Latitude and Longitude from a CSV File
 
-11.3 Integrating Data from Different Sources
+## 11.3 Integrating Data from Different Sources
 
-11.4 Preparing the Data for Plotting
+## 11.4 Preparing the Data for Plotting
 
-11.4.1 Redoing the Merge of the Factbook and Location Data
+### 11.4.1 Redoing the Merge of the Factbook and Location Data
 
-11.5 Plotting with Google Earth(TM)
+## 11.5 Plotting with Google Earth(TM)
 
-11.6 Extracting Demographic Information from the CIA XML File
+## 11.6 Extracting Demographic Information from the CIA XML File
 
-11.7 Generating KML Directly
+## 11.7 Generating KML Directly
 
-11.8 Additional Computational Tools
+## 11.8 Additional Computational Tools
 
-11.8.1 Creating Plotting Symbols
+### 11.8.1 Creating Plotting Symbols
 
-11.8.2 Efficience in Generating KML form Strings
+### 11.8.2 Efficience in Generating KML form Strings
 
-11.8.3 Extracting Latitude and Longitude from an HTML File
+### 11.8.3 Extracting Latitude and Longitude from an HTML File
 
-11.9 Exercises
+## 11.9 Exercises
