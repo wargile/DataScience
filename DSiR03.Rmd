@@ -623,6 +623,13 @@ Figure 3.7: Exploring Categorical Measures Derived from email. These two mosaic 
 
 3.11 Fitting the rpart() Model to the email Data
 
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
 Figure 3.8: Tree for Partitioning email to Predict Spam. This tree was fitted using rpart() on 6232 messages. The default values for all of the arguments to rpart() were used. Notice the leftmost leaf classified as ham those messages with fewer than 13% capitals, fewer than 4% HTML tags, and at least 1 forward. Eighteen spam messages fall into this leaf and so are misclassified, but 2240 of the ham is properly classified using these 3 yes-no questions.
 
 3.12 Exercises
