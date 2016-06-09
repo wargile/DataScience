@@ -79,7 +79,7 @@ Table 3.1: Variable Definition Table
 
 3.9.1 Checking Our Code for Errors
 
-Figure 3.4:
+Figure 3.4: Comparison of Two Measures of Length for a Message. This scatter plot shows the relationship between the number of lines and the number of characters in the body of a message. The plot is on log scale, and 1 is added to all of the values before taking logs to address issues with empty bodies. The line y = x is added for omparison purposes.
 
 3.10 Exploring the email Feature Set
 
