@@ -630,7 +630,54 @@ Figure 3.7: Exploring Categorical Measures Derived from email. These two mosaic 
 ```{r, comment=NA}
 
 ```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
 Figure 3.8: Tree for Partitioning email to Predict Spam. This tree was fitted using rpart() on 6232 messages. The default values for all of the arguments to rpart() were used. Notice the leftmost leaf classified as ham those messages with fewer than 13% capitals, fewer than 4% HTML tags, and at least 1 forward. Eighteen spam messages fall into this leaf and so are misclassified, but 2240 of the ham is properly classified using these 3 yes-no questions.
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+```{r, comment=NA}
+
+```
+
+Figure 3.9: Type I and II Errors for Recursive Partitioning. This plot displays the Type I and II errors for predicting spam as a function of the size of the complexity parameters in the rpart() function. The complexity parameter is a mechanism for specifying the threshold for choosing a split for a subgroup. Splits that do not achieve a gain in fit of at least the size of the parameter value provided are not made. The Type I error is minimized at a complexity parameter value of 0.001 for an error rate of 3.9%. The Type II error rate for this complexity parameter value is 10.5% 
 
 3.12 Exercises
 
