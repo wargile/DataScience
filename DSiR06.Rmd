@@ -25,30 +25,30 @@ http://www.rdatasciencecases.org
 
 by Cari Kaufman and Duncan Temple Lang
 
-6.1 The Problem
+## 6.1 The Problem
 
-6.1.1 Computation Topics
+### 6.1.1 Computation Topics
 
-6.2 The Data Format
+## 6.2 The Data Format
 
-6.3 Reading the Financial Data
+## 6.3 Reading the Financial Data
 
-6.4 Visualizing the Time Series
+## 6.4 Visualizing the Time Series
 
-6.5 Finding Opening and Closing Positions
+## 6.5 Finding Opening and Closing Positions
 
-6.5.1 Identifying a Position
+### 6.5.1 Identifying a Position
 
-6.5.2 Displaying Positions
+### 6.5.2 Displaying Positions
 
-6.5.3 Finding All Positions
+### 6.5.3 Finding All Positions
 
-6.5.4 Computing the Profit for a Position
+### 6.5.4 Computing the Profit for a Position
 
-6.5.5 Fining the Optimal Value for k
+### 6.5.5 Fining the Optimal Value for k
 
-6.6 Simulation Study
+## 6.6 Simulation Study
 
-6.6.1 Simulating the Stock Price Series
+### 6.6.1 Simulating the Stock Price Series
 
-6.6.2 Making sotckSim() Faster
+### 6.6.2 Making sotckSim() Faster
