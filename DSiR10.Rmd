@@ -25,22 +25,22 @@ http://www.rdatasciencecases.org
 
 by Deborah Nolan and Duncan Temple Lang
 
-10.1 Introduction
+## 10.1 Introduction
 
-10.1.1 Computational Topics
+### 10.1.1 Computational Topics
 
-10.2 Sean Lahman’s Database
+## 10.2 Sean Lahman’s Database
 
-10.2.1 Connecting to the Baseball Database from within R
+### 10.2.1 Connecting to the Baseball Database from within R
 
-10.3 Aggregating Salaries into Payroll
+## 10.3 Aggregating Salaries into Payroll
 
-10.4 Merging Payroll Data with Information in Other Tables
+## 10.4 Merging Payroll Data with Information in Other Tables
 
-10.4.1 Adding team Names to the Payroll Data
+### 10.4.1 Adding team Names to the Payroll Data
 
-10.4.2 Adding World Series Records to the Payroll Data
+### 10.4.2 Adding World Series Records to the Payroll Data
 
-10.5 Exploring the Extreme Salaries
+## 10.5 Exploring the Extreme Salaries
 
-10.6 Exercises
+## 10.6 Exercises
